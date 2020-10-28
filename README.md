@@ -1,8 +1,8 @@
-# README - _template-git-project
+# README - apm-labs
 
 ## 1. Introdução
 
-Este repositório contém os artefatos do projeto **_template-git-project**.
+Este repositório contém os artefatos do projeto **apm-labs**. O projeto **apm-labs** consiste em explorar cenários de performance.
 
 
 ## 2. Documentação
