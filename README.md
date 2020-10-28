@@ -19,12 +19,12 @@ Este repositório contém os artefatos do projeto **apm-labs**. O projeto **apm-
 
 ### 2.3. Diagrama de BPMN (Business Process Modeling Notation)
 
-![DeployDiagram-Context.png](./doc/BpmnDiagram-Context.png) 
+![BpmnDiagram-Context.png](./doc/BpmnDiagram-Context.png) 
 
 
 ### 2.4. Diagrama de Mapa Mental (Mind Map Diagram)
 
-![ClassDiagram-Context.png](./doc/MindMapDiagram-Context.png) 
+![MindMapDiagram-Context.png](./doc/MindMapDiagram-Context.png) 
 
 
 ### 2.5. Diagrama de Pacotes Classes (Packages and Class Class Diagram)
@@ -32,12 +32,16 @@ Este repositório contém os artefatos do projeto **apm-labs**. O projeto **apm-
 ![ClassDiagram-Context.png](./doc/ClassDiagram-Context.png) 
 
 
-### 2.6. Estratégia de Branches (Branch Strategy Workflow)
+### 2.6. Diagrama de Sequencia (Sequence Diagram)
+
+![SequenceDiagram-Context.png](./doc/SequenceDiagram.png) 
+
+
+### 2.7. Estratégia de Branches (Branch Strategy Workflow)
 
 Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilva/eval-git#38-estrat%C3%A9gia-de-gerenciamento-de-branches) :
 * `master`: pronto para produção
 * `develop`: último desenvolvimento pronto para produção
-
 
 
 ## 3. Projeto
