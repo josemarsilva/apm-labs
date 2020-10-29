@@ -2,7 +2,7 @@
 
 ## 1. Introdução
 
-Este repositório contém os artefatos do projeto **apm-labs**. O projeto **apm-labs** consiste em explorar cenários de performance.
+O projeto **apm-labs** consiste em explorar cenários de _performance_, _stress test_ e _tuning_ de aplicações.
 
 
 ## 2. Documentação
@@ -27,11 +27,6 @@ Este repositório contém os artefatos do projeto **apm-labs**. O projeto **apm-
 ![MindMapDiagram-Context.png](./doc/MindMapDiagram-Context.png) 
 
 
-### 2.5. Diagrama de Pacotes Classes (Packages and Class Class Diagram)
-
-![ClassDiagram-Context.png](./doc/ClassDiagram-Context.png) 
-
-
 ### 2.6. Diagrama de Sequencia (Sequence Diagram)
 
 ![SequenceDiagram-Context.png](./doc/SequenceDiagram.png) 
@@ -50,6 +45,8 @@ Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilv
 
 #### a. Tecnologias e ferramentas
 
+* NodeJS
+* Docker
 * Java JDK 1.8 (jar file includes runnable)
 
 
@@ -67,10 +64,29 @@ Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilv
 
 ### 3.3. Guia de Implantação, Configuração e Instalação
 
-* n/a
+#### a. Instalando NodeJS (em Linux Ubuntu)
+
+* https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server#31-nodejs
+
+#### b. Instalando Docker e Docker Composer (em Linux Ubuntu)
+
+* https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server/blob/master/README.md#41-docker---installation
+* https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server/blob/master/README.md#42-docker-composer---installation
+
+#### c. Instalando/Clonando o repositório `apm-labs` no ambiente
+
+```sh
+$ sudo mkdir /opt
+$ sudo mkdir /opt/githome
+$ sudo chown -R $USER:$USER /opt/githome
+$ cd /opt/githome
+$ git clone https://github.com/josemarsilva/apm-labs.git
+```
 
 
-### 3.4. Guia de Demonstração e Teste
+### 3.4. Guia de Execução, Demonstração e Cenários de Teste
+
+#### a. Cenário no. 01: HTTP Server - Hello World
 
 * n/a
 
