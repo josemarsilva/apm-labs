@@ -68,10 +68,12 @@ Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilv
 
 * https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server#31-nodejs
 
+
 #### b. Instalando Docker e Docker Composer (em Linux Ubuntu)
 
 * https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server/blob/master/README.md#41-docker---installation
 * https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server/blob/master/README.md#42-docker-composer---installation
+
 
 #### c. Instalando/Clonando o repositório `apm-labs` no ambiente
 
@@ -84,6 +86,20 @@ $ git clone https://github.com/josemarsilva/apm-labs.git
 ```
 
 
+#### d. Instalando JMeter
+
+* Localize a última versão de distribuição do _Binaries_ do JMeter em https://jmeter.apache.org/download_jmeter.cgi
+
+```sh
+$ sudo mkdir /opt
+$ cd /opt
+$ wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.3.tgz
+$ tar -xvf apache-jmeter-5.3.tgz
+$ sudo chown -R $USER:$USER /opt/apache-jmeter-5.3
+$ rm apache-jmeter-5.3.tgz
+```
+
+
 ### 3.4. Guia de Execução, Demonstração e Cenários de Teste
 
 #### a. Cenário no. 01: HTTP Server - Hello World
@@ -91,14 +107,26 @@ $ git clone https://github.com/josemarsilva/apm-labs.git
 * n/a
 
 
-### 3.5. Patterns, Standard, Conventions and Best Practices
+### 3.5. Design Patterns, Standard, Conventions and Best Practices
 
 * n/a
 
 
 ## I - Referências
 
-* https://www.applicationperformancemanagement.org/
-* https://www.comparitech.com/net-admin/application-performance-management-fundamentals/
-* https://stackify.com/what-is-application-performance-monitoring/
-* https://en.wikipedia.org/wiki/Application_performance_management
+* APM - Application Management Performance
+  * https://www.applicationperformancemanagement.org/
+  * https://www.comparitech.com/net-admin/application-performance-management-fundamentals/
+  * https://stackify.com/what-is-application-performance-monitoring/
+  * https://en.wikipedia.org/wiki/Application_performance_management
+* Design Patterns
+  * [Service Design Patterns by Martin Fowler](https://martinfowler.com/books/sdp.html)
+  * [Service Design Patterns - Request/Response](http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestResponse)
+  * [Service Design Patterns - Request/Acknowledge (Poll or Callback)](http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestAcknowledge)
+  * [Service Design Patterns - Asynchronous Response Handler](http://www.servicedesignpatterns.com/WebServiceInfrastructures/AsyncResponseHandler)
+  * [Synchronous vs Asynchronous Services - Request/Response, Acoplamento Temporal e Client-side Blocking/Assynchronous Response Handler](http://nelsonbassetto.com/blog/2012/10/synchronous-x-asynchronous-services-parte-1/)
+  * [Synchronous vs Asynchronous Services - Request/Acknowledge/Poll, Request/Acknowledge/Callback e Request/Acknowledge/Relay](http://nelsonbassetto.com/blog/2012/10/synchronous-x-asynchronous-services-parte-1/)
+  * [Service Design Patterns (.pdf)](http://emadilms.ir/emadi/wp-content/uploads/2015/02/Robert-Daigneau-Service-Design-Patterns_-Fundamental-Design-Solutions-for-SOAP-WSDL-and-RESTful-Web-Services-Addison-Wesley-Professional-2011.pdf)
+* NodeJS
+  * [Construindo um Servidor Web com NodeJS](https://www.devmedia.com.br/construindo-um-servidor-web-com-node-js/32023)
+  * [Overview of Blocking vs Non-Blocking](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/)
