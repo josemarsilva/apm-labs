@@ -2,7 +2,7 @@
 
 ## 1. Introdução
 
-O projeto **apm-labs** consiste em explorar cenários de _performance_, _stress test_ e _tuning_ de aplicações.
+O projeto **apm-labs** consiste em explorar cenários de _performance test_, _stress test_, _load test_ e _tuning_ de aplicações.
 
 
 ## 2. Documentação
@@ -27,12 +27,7 @@ O projeto **apm-labs** consiste em explorar cenários de _performance_, _stress 
 ![MindMapDiagram-Context.png](./doc/MindMapDiagram-Context.png) 
 
 
-### 2.6. Diagrama de Sequencia (Sequence Diagram)
-
-![SequenceDiagram-Context.png](./doc/SequenceDiagram.png) 
-
-
-### 2.7. Estratégia de Branches (Branch Strategy Workflow)
+### 2.6. Estratégia de Branches (Branch Strategy Workflow)
 
 Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilva/eval-git#38-estrat%C3%A9gia-de-gerenciamento-de-branches) :
 * `master`: pronto para produção
@@ -102,7 +97,12 @@ $ rm apache-jmeter-5.3.tgz
 
 ### 3.4. Guia de Execução, Demonstração e Cenários de Teste
 
-#### a. Cenário no. 01: HTTP Server - Hello World
+#### a. Cenário 01: HTTP Web Server
+
+* n/a
+
+
+#### b. Cenário 02: HTTP JSON Server
 
 * n/a
 
@@ -128,5 +128,11 @@ $ rm apache-jmeter-5.3.tgz
   * [Synchronous vs Asynchronous Services - Request/Acknowledge/Poll, Request/Acknowledge/Callback e Request/Acknowledge/Relay](http://nelsonbassetto.com/blog/2012/10/synchronous-x-asynchronous-services-parte-1/)
   * [Service Design Patterns (.pdf)](http://emadilms.ir/emadi/wp-content/uploads/2015/02/Robert-Daigneau-Service-Design-Patterns_-Fundamental-Design-Solutions-for-SOAP-WSDL-and-RESTful-Web-Services-Addison-Wesley-Professional-2011.pdf)
 * NodeJS
+  * [How to Install NodeJS](https://blog.teamtreehouse.com/install-node-js-npm-windows)
+  * [Download NodeJS Installer](https://nodejs.org/en/download/)
   * [Construindo um Servidor Web com NodeJS](https://www.devmedia.com.br/construindo-um-servidor-web-com-node-js/32023)
+  * [Construindo um Servidor Json com NodeJS](https://egghead.io/lessons/javascript-creating-demo-apis-with-json-server)
   * [Overview of Blocking vs Non-Blocking](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/)
+* JMeter
+  * [JMeter - Testes de Carga](http://shipit.resultadosdigitais.com.br/blog/testes-de-carga-com-jmeter/)
+  * [JMeter - Teste de Performance](https://www.devmedia.com.br/teste-de-performance-com-jmeter/34621)
