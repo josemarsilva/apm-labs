@@ -26,6 +26,19 @@ O projeto **apm-labs** consiste em explorar cenários de _performance test_, _st
 
 ![MindMapDiagram-Context.png](./doc/MindMapDiagram-Context.png) 
 
+De uma forma geral, vamos tentar caracterizar cada um dos *tipos de testes* de acordo com seus _objetivos_ e _características_ :
+
+* *Teste de Carga*: tem como objetivo avaliar a capacidade da aplicação de manter a qualidade de desempenho _quando submetida a quantidades_ diversas de usuários ou transações
+* *Teste de Capacidade*: semelhante ao teste de carga, tem como objetivo _identificar os limites que a aplicação_ é capaz de suportar, _dentro de parâmetros de qualidades definidos_, quando submetida a elevação da quantidade de carga de usuários ou transações
+* *Teste de Stress*: tem como objetivo _encontrar o limite da aplicação_ ao submetê-la a cargas que estão no limite ou acima do limite especificado inicialmente de usuários ou transações
+* *Testes de Volume*: tem como objetivo avaliar capacidade da aplicação quando submetida a elevação da _quantidade de dados_ que o sistema pode gerenciar
+* *Testes de Escalabilidade*: tem como objetivo determinar a _eficácia da aplicação_ em suportar o aumento na carga
+
+É importante lembrar que a quantificação, metrificação ou definição dos seguintes termos abaixo relacionados *não se dá em termos absolutos*, isto é cada negócio, cliente, sistema ou funcionalidade podem ter parâmetros de qualidade diferentes para:
+* qualidade de desempenho
+* limite aceitáveis de ... (CPU, tempo de resposta, etc)
+* qual o melhor tipo de teste aplicar
+
 
 ### 2.6. Estratégia de Branches (Branch Strategy Workflow)
 
@@ -42,7 +55,10 @@ Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilv
 
 * NodeJS
 * Docker
-* Java JDK 1.8 (jar file includes runnable)
+* JMeter
+* SOAP UI
+* SOAP UI
+* Curl(Window e Linux)
 
 
 #### b. Ferramental de apoio
@@ -54,7 +70,7 @@ Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilv
 ### 3.2. Guia do Desenvolvedor e Administrador
 
 * Faça um clone do projeto `git clone`. Use o _branch_ `master` se o _branch_ `develop` não estiver disponível
-* Leia as documentações disponíves em "2. Documentação"  and "3.x. Guides, Patterns, Standard, Conventions and Best Practices"
+* Leia as documentações disponíves em "2. Documentação"  and "3.x. Design Patterns, Standard, Conventions and Best Practices"
 
 
 ### 3.3. Guia de Implantação, Configuração e Instalação
@@ -97,9 +113,58 @@ $ rm apache-jmeter-5.3.tgz
 
 ### 3.4. Guia de Execução, Demonstração e Cenários de Teste
 
-#### a. Cenário 01: HTTP Web Server
+#### 3.4.1. Performance Test JMeter vs Web Server 
 
-* n/a
+##### Planejar
+
+* Objetivo: O objetivo avaliar as ferramentas na atividade de *Teste de Carga*
+* Tipo de Testes: *Teste de Carga*
+* Ciclos e Cenários: Executar um único ciclo para cada cenário com cada uma das ferramentas
+
+| Cenário      | Detalhamento |
+| :---         |     :---:    |
+| Cenário-01   | _Sanity Test_ da aplicação com um *Browser* |
+| Cenário-02   | _Sanity Test_ da aplicação com um *Curl(windows)* |
+| Cenário-03   | _Sanity Test_ da aplicação com um *Postman* |
+| Cenário-04   | _Sanity Test_ da aplicação com um *SoapUI* |
+
+
+* Quantidades, rampa de subida, tempo e vazão:
+* Amostra da carga "payload" e "test-data": n/a
+* Infraestrutura, arquitetura e sequência
+* Monitoramento: n/a
+* Itens de análise, check-list e relatórios: Quadro comparativo das características de cada ferramenta, facilidades, dificuldades, etc
+
+##### Executar
+
+* *Iniciar* o servidor web local *nodejs-webserver*
+
+```cmd
+apm-labs> cd src/nodejs-webserver
+nodejs-webserver> node nodejs-webserver.js
+```
+
+* *Executar* o `Cenário-01` abrindo a seguinte URL pelo browser de sua máquina
+
+```url
++--------------------------+
+| http://localhost:3000/   |
++--------------------------+
+| Hello Simple HTTP Server |
++--------------------------+
+```
+
+* Marque a data e hora inicial
+* Agora clique no botão F5(Refresh) a quantidade de vezes planejadas (kkkkkk)
+* Marque a data e hora final
+* Encontre a diferença de tempo entre data e hora final e inicial em segundos e divida pela quantidade
+* Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
+
+
+
+* Iniciar o Apache JMeter
+
+* Referências:
 
 
 #### b. Cenário 02: HTTP JSON Server
@@ -119,6 +184,8 @@ $ rm apache-jmeter-5.3.tgz
   * https://www.comparitech.com/net-admin/application-performance-management-fundamentals/
   * https://stackify.com/what-is-application-performance-monitoring/
   * https://en.wikipedia.org/wiki/Application_performance_management
+  * [Quais os tipos de testes de desempenho](https://blog.cedrotech.com/entenda-o-que-sao-os-testes-de-desempenho/)
+  * [Tipos de Testes de Performance](https://www.youtube.com/watch?v=HhShUc9OarE)
 * Design Patterns
   * [Service Design Patterns by Martin Fowler](https://martinfowler.com/books/sdp.html)
   * [Service Design Patterns - Request/Response](http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestResponse)
@@ -133,6 +200,10 @@ $ rm apache-jmeter-5.3.tgz
   * [Construindo um Servidor Web com NodeJS](https://www.devmedia.com.br/construindo-um-servidor-web-com-node-js/32023)
   * [Construindo um Servidor Json com NodeJS](https://egghead.io/lessons/javascript-creating-demo-apis-with-json-server)
   * [Overview of Blocking vs Non-Blocking](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/)
+  * [NodeJS Primeiros Passos: Servidor HTTP Básico](https://www.youtube.com/watch?v=5L5-EoJbMfY)
+  * [NodeJS Assíncrono: Entenda de vez Callbacks, Promises e Async/Await](https://www.youtube.com/watch?v=7Bs4-rqbCQc)
 * JMeter
   * [JMeter - Testes de Carga](http://shipit.resultadosdigitais.com.br/blog/testes-de-carga-com-jmeter/)
   * [JMeter - Teste de Performance](https://www.devmedia.com.br/teste-de-performance-com-jmeter/34621)
+* Testes de Performance
+  * [Introdução a Teste de Performance de Software](https://www.softwaretestinghelp.com/introduction-to-performance-testing-loadrunner-training-tutorial-part-1/)
