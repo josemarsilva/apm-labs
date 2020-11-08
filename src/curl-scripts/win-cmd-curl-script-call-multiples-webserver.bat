@@ -20,9 +20,13 @@ SET BEGIN_TIME=%TIME%
 ECHO Begin Date/Time: %BEGIN_DATE% %BEGIN_TIME%
 ECHO.
 
+ECHO Removendo (.log) 
+DEL /Q win-cmd-curl-script-call-multiples-webserver-*.log
+
 REM # #########################################################################
 FOR /L %%G in (1,1,%PARAM_QTY_THREADS%) DO (
     ECHO  Thread # %%G
+    START cmd /c win-cmd-curl-script-webserver.bat ^> win-cmd-curl-script-webserver-%%G.log
 )
 
 REM # #########################################################################

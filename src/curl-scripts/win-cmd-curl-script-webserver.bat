@@ -27,6 +27,7 @@ FOR /L %%G in (1,1,%PARAM_QTY_REQUEST%) DO (
 )
 
 REM # #########################################################################
+ECHO.
 SET END_DATE=%DATE%
 SET END_TIME=%TIME%
 ECHO End Date/Time: %END_DATE% %END_TIME%

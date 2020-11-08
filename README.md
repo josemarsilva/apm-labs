@@ -154,13 +154,13 @@ $ rm apache-jmeter-5.3.tgz
 * **Tipo de Testes**: *Teste de Carga*
 * **Ciclos e Cenários**: Executar um único ciclo para cada cenário com cada uma das ferramentas
 
-| Cenário     | Detalhamento |
-| :---------- | :---         |
-| Cenário-01  | *Teste de Carga (Load Test)* da aplicação com um `Browser` |
-| Cenário-02  | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações de quantidades, rampa de subida, tempo e vazão |
-| Cenário-03  | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
-| Cenário-04  | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
-| Cenário-05  | *Teste de Carga (Load Test)* da aplicação com um `JMeter` |
+| Cenário | Detalhamento |
+| :------ | :---         |
+| 01      | *Teste de Carga (Load Test)* da aplicação com um `Browser` |
+| 02      | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações de quantidades, rampa de subida, tempo e vazão |
+| 03      | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
+| 04      | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
+| 05      | *Teste de Carga (Load Test)* da aplicação com um `JMeter` |
 
 
 * **Quantidades, rampa de subida, tempo e vazão**:
@@ -213,6 +213,29 @@ nodejs-webserver> node nodejs-webserver.js
   * Agora clique no botão F5(Refresh) a quantidade de vezes planejadas (kkkkkk)
   * Marque a data e hora final
   * Encontre a diferença de tempo entre data e hora final e inicial em segundos e divida pela quantidade
+  * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
+
+* *Encerrar* o teste do cenário dando ^C na tela do Windows Command que está rodando o `nodejs-webserver.js`
+
+###### Cenário-02
+
+* *Iniciar* o servidor web local *nodejs-webserver*
+
+```cmd
+apm-labs> cd src/nodejs-webserver
+nodejs-webserver> node nodejs-webserver.js
+```
+
+* *Executar* os *Teste de Carga (Load Test)* com o `Cenário-02`:
+  * Execute `win-cmd-curl-script-webserver.bat`
+  * Marque a data/hora inicial e final
+  * Encontre a diferença de tempo entre data/hora final e inicial em segundos e divida pela quantidade
+  * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
+
+* *Executar* os *Teste de Carga (Load Test)* com o `Cenário-02.b`:
+  * Execute `win-cmd-curl-script-call-multiples-webserver.bat`
+  * Obtenha a data/hora inicial e final em cada um dos arquivos (.log) de nomenclatura `win-cmd-curl-script-call-multiples-webserver-*.log`
+  * Encontre a diferença média entre a data/hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
 * *Encerrar* o teste do cenário dando ^C na tela do Windows Command que está rodando o `nodejs-webserver.js`
