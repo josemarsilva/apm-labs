@@ -146,7 +146,7 @@ $ rm apache-jmeter-5.3.tgz
 
 ### 3.4. Guia de Execução, Demonstração e Cenários de Teste
 
-#### 3.4.1. Performance Test JMeter vs Web Server 
+#### 3.4.1. Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (Web Server)
 
 ##### Planejar
 
@@ -157,7 +157,7 @@ $ rm apache-jmeter-5.3.tgz
 | Cenário      | Detalhamento |
 | :---         |     :---:    |
 | Cenário-01   | *Teste de Carga (Load Test)* da aplicação com um `Browser` |
-| Cenário-02   | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` |
+| Cenário-02   | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações de quantidades, rampa de subida, tempo e vazão |
 | Cenário-03   | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
 | Cenário-04   | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
 | Cenário-05   | *Teste de Carga (Load Test)* da aplicação com um `JMeter` |
@@ -167,20 +167,27 @@ $ rm apache-jmeter-5.3.tgz
 
 | Quantidade _(qty)_ | Rampa _(ramp up)_ | Tempo _(dur)_ | Vazão _(throughput)_ | Obs  |
 | ---:               | :---:             | :---:         | :---                 | :--- |
-| 1000               | n/a               | n/a           | 1 threads            | n/a  |
+| 1000 _requests_    | n/a               | n/a           | Cenários com 1 e 10 _threads_ simultâneas | n/a  |
 
 
 * **Amostra da carga "payload" e "test-data"**: n/a
 * **Infraestrutura, arquitetura e sequência**:
+
+![DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png](./doc/DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png) 
+
+
 * **Monitoramento**: n/a
+* **Construção robôs de testes: injetar, rebater e monitorar**:
+  * Os robôs de teste para _injetar_:
+    * `win-cmd-curl-script-webserver.bat` construído e disponível em `./src/curl-scripts`
+  * Os robôs de teste para _rebater_:
+    * `nodejs-webserver.js` construído e disponível em `./src/nodejs-webserver`
+  * Os robôs de teste para _monitorar_:
+    * n/a
+
 * **Itens de análise, check-list e relatórios**: Quadro comparativo das características de cada ferramenta, facilidades, dificuldades, etc
 
 ##### Executar
-
-* *Construir* os robôs de testes para injetar, rebater e monitorar
-  * Os robôs de teste para *injetar* deverão serforam construído é o ``
-  * Os robôs de teste para *rebater* foram construído é o `nodejs-webserver.js`
-  * Os robôs de teste para *monitorar* é n/a a este cenário
 
 * *Iniciar* o servidor web local *nodejs-webserver*
 
@@ -207,14 +214,6 @@ nodejs-webserver> node nodejs-webserver.js
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
 
-* Iniciar o Apache JMeter
-
-* Referências:
-
-
-#### b. Cenário 02: HTTP JSON Server
-
-* n/a
 
 
 ### 3.5. Design Patterns, Standard, Conventions and Best Practices
