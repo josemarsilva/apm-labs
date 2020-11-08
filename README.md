@@ -154,13 +154,13 @@ $ rm apache-jmeter-5.3.tgz
 * **Tipo de Testes**: *Teste de Carga*
 * **Ciclos e Cenários**: Executar um único ciclo para cada cenário com cada uma das ferramentas
 
-| Cenário      | Detalhamento |
-| :---         |     :---:    |
-| Cenário-01   | *Teste de Carga (Load Test)* da aplicação com um `Browser` |
-| Cenário-02   | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações de quantidades, rampa de subida, tempo e vazão |
-| Cenário-03   | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
-| Cenário-04   | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
-| Cenário-05   | *Teste de Carga (Load Test)* da aplicação com um `JMeter` |
+| Cenário     | Detalhamento |
+| :---------- |     :---:    |
+| Cenário-01  | *Teste de Carga (Load Test)* da aplicação com um `Browser` |
+| Cenário-02  | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações de quantidades, rampa de subida, tempo e vazão |
+| Cenário-03  | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
+| Cenário-04  | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
+| Cenário-05  | *Teste de Carga (Load Test)* da aplicação com um `JMeter` |
 
 
 * **Quantidades, rampa de subida, tempo e vazão**:
