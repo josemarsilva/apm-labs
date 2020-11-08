@@ -57,12 +57,12 @@ Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilv
 
 De uma forma geral, vamos tentar <ins>definir</ins> e **_caracterizar_** alguns dos termos utilizados neste projeto de laboratório para permitir uma melhor compreensão e entendimento:
 
-* **Teste de Capacidade (Capacity Test)**: semelhante ao teste de carga, tem como objetivo **_identificar os limites que a aplicação_** é capaz de suportar, **_dentro de parâmetros de qualidades definidos_**, quando submetida a elevação da quantidade de carga de usuários ou transações
-* **Teste de Carga (ou Load Test)**: tem como objetivo avaliar a capacidade da aplicação de manter a qualidade de desempenho **_quando submetida a quantidades_** diversas de usuários ou transações
-* **Teste de Escalabilidade (Scalability Test)**: tem como objetivo determinar a **_eficácia da aplicação em suportar o aumento na carga_**
-* **Teste de Sanidade (Sanity Test)**: tem como objetivo indentificar se a aplicaçao está **_respondendo corretamente_**
-* **Teste de Estresse (Stress Test)**: tem como objetivo **_encontrar o limite da aplicação_** ao submetê-la a cargas que estão no limite ou acima do limite especificado inicialmente de usuários ou transações
-* **Teste de Volume (Volume Test)**: tem como objetivo avaliar capacidade da aplicação quando submetida a elevação da **_quantidade de dados_** que o sistema pode gerenciar
+* **Teste de Capacidade _(Capacity Test)_**: semelhante ao teste de carga, tem como objetivo **identificar os limites que a aplicação** é capaz de suportar, **dentro de parâmetros de qualidades definidos**, quando submetida a elevação da quantidade de carga de usuários ou transações
+* **Teste de Carga _(Load Test)_**: tem como objetivo avaliar a capacidade da aplicação de manter a qualidade de desempenho **quando submetida a quantidades diversas** de usuários ou transações
+* **Teste de Escalabilidade _(Scalability Test)_**: tem como objetivo determinar a **eficácia da aplicação em suportar aumento de carga**
+* **Teste de Sanidade _(Sanity Test)_**: tem como objetivo indentificar se a aplicaçao está **respondendo corretamente**
+* **Teste de Estresse _(Stress Test)_**: tem como objetivo **encontrar o limite da aplicação** ao submetê-la a cargas que estão no limite ou acima do limite especificado inicialmente de usuários ou transações
+* **Teste de Volume _(Volume Test)_**: tem como objetivo avaliar capacidade da aplicação quando submetida a **elevação da quantidade de dados** que o sistema pode gerenciar
 
 
 ### 2.7. Avisos
@@ -158,9 +158,9 @@ $ rm apache-jmeter-5.3.tgz
 
 * **Quantidades, rampa de subida, tempo e vazão**:
 
-| Quantidade (qty) | Rampa (ramp up) | Tempo (dur) | Vazão (throughput) | Obs  |
-| ---:             |     :---:       |   :---:     | :---               | :--- |
-| 1000             | n/a             | n/a         | 1 threads          | n/a  |
+| Quantidade _(qty)_ | Rampa _(ramp up)_ | Tempo _(dur)_ | Vazão _(throughput)_ | Obs  |
+| ---:               |     :---:         |   :---:       | :---                 | :--- |
+| 1000               | n/a               | n/a           | 1 threads            | n/a  |
 
 
 * **Amostra da carga "payload" e "test-data"**: n/a
