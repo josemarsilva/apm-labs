@@ -1,26 +1,27 @@
 # README - apm-labs
 
-Tabela de Conteúdo
-* 1. Introdução
-* 2. Documentação
-  * 2.1. Diagrama de Caso de Uso (Use Case Diagram)
-  * 2.2. Diagrama de Implantação (Deploy Diagram)
-  * 2.3. Diagrama de BPMN (Business Process Modeling Notation)
-  * 2.4. Diagrama de Mapa Mental (Mind Map Diagram)
-  * 2.5. Estratégia de Branches (Branch Strategy Workflow)
-  * 2.6. Glossário de Termos (Glossary)
-  * 2.7. Aviso
-* 3. Projeto
-  * 3.1. Pré-Requisitos, Pré-Condições e Premissas
-  * 3.2. Guia do Desenvolvedor e Administrador
-  * 3.3. Guia de Implantação, Configuração e Instalação
-  * 3.4. Guia de Execução, Demonstração e Cenários de Teste
-  * 3.5. Design Patterns, Standard, Conventions and Best Practices
-* I - Referências
-
 ## 1. Introdução
 
 O projeto **apm-labs** consiste em explorar cenários de testes **_Performance Test_**, **_Stress Test_**, **_load Test_** e **_Tuning_** de aplicações.
+
+### Tabela de Conteúdo
+
+1. Introdução
+2. Documentação
+  * 1. Diagrama de Caso de Uso (Use Case Diagram)
+  * 2. Diagrama de Implantação (Deploy Diagram)
+  * 3. Diagrama de BPMN (Business Process Modeling Notation)
+  * 4. Diagrama de Mapa Mental (Mind Map Diagram)
+  * 5. Estratégia de Branches (Branch Strategy Workflow)
+  * 6. Glossário de Termos (Glossary)
+  * 7. Aviso
+3. Projeto
+  * 1. Pré-Requisitos, Pré-Condições e Premissas
+  * 2. Guia do Desenvolvedor e Administrador
+  * 3. Guia de Implantação, Configuração e Instalação
+  * 4. Guia de Execução, Demonstração e Cenários de Teste
+  * 5. Design Patterns, Standard, Conventions and Best Practices
+4. I - Referências
 
 
 ## 2. Documentação
@@ -56,12 +57,12 @@ Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilv
 
 De uma forma geral, vamos tentar <ins>definir</ins> e **_caracterizar_** alguns dos termos utilizados neste projeto de laboratório para permitir uma melhor compreensão e entendimento:
 
-* **Teste de Capacidade ou Capacity Test**: semelhante ao teste de carga, tem como objetivo **_identificar os limites que a aplicação_** é capaz de suportar, **_dentro de parâmetros de qualidades definidos_**, quando submetida a elevação da quantidade de carga de usuários ou transações
-* **Teste de Carga ou Load Test**: tem como objetivo avaliar a capacidade da aplicação de manter a qualidade de desempenho **_quando submetida a quantidades_** diversas de usuários ou transações
-* **Teste de Escalabilidade ou Scalability Test**: tem como objetivo determinar a **_eficácia da aplicação_** em suportar o aumento na carga
-* **Teste de Sanidade ou Sanity Test**: tem como objetivo indentificar se a aplicaçao está **_respondendo corretamente_**
-* **Teste de Estresse ou Stress Test**: tem como objetivo **_encontrar o limite da aplicação_** ao submetê-la a cargas que estão no limite ou acima do limite especificado inicialmente de usuários ou transações
-* **Teste de Volume ou Volume Test**: tem como objetivo avaliar capacidade da aplicação quando submetida a elevação da **_quantidade de dados_** que o sistema pode gerenciar
+* **Teste de Capacidade (Capacity Test)**: semelhante ao teste de carga, tem como objetivo **_identificar os limites que a aplicação_** é capaz de suportar, **_dentro de parâmetros de qualidades definidos_**, quando submetida a elevação da quantidade de carga de usuários ou transações
+* **Teste de Carga (ou Load Test)**: tem como objetivo avaliar a capacidade da aplicação de manter a qualidade de desempenho **_quando submetida a quantidades_** diversas de usuários ou transações
+* **Teste de Escalabilidade (Scalability Test)**: tem como objetivo determinar a **_eficácia da aplicação em suportar o aumento na carga_**
+* **Teste de Sanidade (Sanity Test)**: tem como objetivo indentificar se a aplicaçao está **_respondendo corretamente_**
+* **Teste de Estresse (Stress Test)**: tem como objetivo **_encontrar o limite da aplicação_** ao submetê-la a cargas que estão no limite ou acima do limite especificado inicialmente de usuários ou transações
+* **Teste de Volume (Volume Test)**: tem como objetivo avaliar capacidade da aplicação quando submetida a elevação da **_quantidade de dados_** que o sistema pode gerenciar
 
 
 ### 2.7. Avisos
@@ -83,7 +84,7 @@ De uma forma geral, vamos tentar <ins>definir</ins> e **_caracterizar_** alguns 
 * Docker
 * JMeter
 * SOAP UI
-* SOAP UI
+* Postman
 * Curl(Window e Linux)
 
 
@@ -143,23 +144,29 @@ $ rm apache-jmeter-5.3.tgz
 
 ##### Planejar
 
-* Objetivo: O objetivo avaliar as ferramentas na atividade de *Teste de Carga*
-* Tipo de Testes: *Teste de Carga*
-* Ciclos e Cenários: Executar um único ciclo para cada cenário com cada uma das ferramentas
+* **Objetivo**: O objetivo deste cenário de testes é avaliar as ferramentas na atividade de *Teste de Carga*
+* **Tipo de Testes**: *Teste de Carga*
+* **Ciclos e Cenários**: Executar um único ciclo para cada cenário com cada uma das ferramentas
 
 | Cenário      | Detalhamento |
 | :---         |     :---:    |
-| Cenário-01   | _Sanity Test_ da aplicação com um *Browser* |
-| Cenário-02   | _Sanity Test_ da aplicação com um *Curl(windows)* |
-| Cenário-03   | _Sanity Test_ da aplicação com um *Postman* |
-| Cenário-04   | _Sanity Test_ da aplicação com um *SoapUI* |
+| Cenário-01   | *Teste de Carga (Load Test)* da aplicação com um *Browser* |
+| Cenário-02   | *Teste de Carga (Load Test)* da aplicação com um *Curl(windows)* |
+| Cenário-03   | *Teste de Carga (Load Test)* da aplicação com um *Postman* |
+| Cenário-04   | *Teste de Carga (Load Test)* da aplicação com um *SoapUI* |
 
 
-* Quantidades, rampa de subida, tempo e vazão:
-* Amostra da carga "payload" e "test-data": n/a
-* Infraestrutura, arquitetura e sequência
-* Monitoramento: n/a
-* Itens de análise, check-list e relatórios: Quadro comparativo das características de cada ferramenta, facilidades, dificuldades, etc
+* **Quantidades, rampa de subida, tempo e vazão**:
+
+| Quantidade (qty) | Rampa (ramp up) | Tempo (dur) | Vazão (throughput) | Obs  |
+| ---:             |     :---:       |   :---:     | :---               | :--- |
+| 1000             | n/a             | n/a         | 1 threads          | n/a  |
+
+
+* **Amostra da carga "payload" e "test-data"**: n/a
+* **Infraestrutura, arquitetura e sequência**:
+* **Monitoramento**: n/a
+* **Itens de análise, check-list e relatórios**: Quadro comparativo das características de cada ferramenta, facilidades, dificuldades, etc
 
 ##### Executar
 
@@ -170,7 +177,7 @@ apm-labs> cd src/nodejs-webserver
 nodejs-webserver> node nodejs-webserver.js
 ```
 
-* *Executar* o `Cenário-01` abrindo a seguinte URL pelo browser de sua máquina
+* *Executar* um *Teste de Sanidade (Sanity Test)* com o `Cenário-01` abrindo a seguinte URL pelo browser de sua máquina
 
 ```url
 +--------------------------+
@@ -180,12 +187,12 @@ nodejs-webserver> node nodejs-webserver.js
 +--------------------------+
 ```
 
-* Marque a data e hora inicial
-* Agora clique no botão F5(Refresh) a quantidade de vezes planejadas (kkkkkk)
-* Marque a data e hora final
-* Encontre a diferença de tempo entre data e hora final e inicial em segundos e divida pela quantidade
-* Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
-
+* *Executar* os *Teste de Carga (Load Test)* com o `Cenário-01`:
+  * Marque a data e hora inicial
+  * Agora clique no botão F5(Refresh) a quantidade de vezes planejadas (kkkkkk)
+  * Marque a data e hora final
+  * Encontre a diferença de tempo entre data e hora final e inicial em segundos e divida pela quantidade
+  * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
 
 * Iniciar o Apache JMeter
