@@ -1,8 +1,26 @@
 # README - apm-labs
 
+Tabela de Conteúdo
+* 1. Introdução
+* 2. Documentação
+  * 2.1. Diagrama de Caso de Uso (Use Case Diagram)
+  * 2.2. Diagrama de Implantação (Deploy Diagram)
+  * 2.3. Diagrama de BPMN (Business Process Modeling Notation)
+  * 2.4. Diagrama de Mapa Mental (Mind Map Diagram)
+  * 2.5. Estratégia de Branches (Branch Strategy Workflow)
+  * 2.6. Glossário de Termos (Glossary)
+  * 2.7. Aviso
+* 3. Projeto
+  * 3.1. Pré-Requisitos, Pré-Condições e Premissas
+  * 3.2. Guia do Desenvolvedor e Administrador
+  * 3.3. Guia de Implantação, Configuração e Instalação
+  * 3.4. Guia de Execução, Demonstração e Cenários de Teste
+  * 3.5. Design Patterns, Standard, Conventions and Best Practices
+* I - Referências
+
 ## 1. Introdução
 
-O projeto **apm-labs** consiste em explorar cenários de _performance test_, _stress test_, _load test_ e _tuning_ de aplicações.
+O projeto **apm-labs** consiste em explorar cenários de testes **_Performance Test_**, **_Stress Test_**, **_load Test_** e **_Tuning_** de aplicações.
 
 
 ## 2. Documentação
@@ -26,25 +44,33 @@ O projeto **apm-labs** consiste em explorar cenários de _performance test_, _st
 
 ![MindMapDiagram-Context.png](./doc/MindMapDiagram-Context.png) 
 
-De uma forma geral, vamos tentar caracterizar cada um dos *tipos de testes* de acordo com seus _objetivos_ e _características_ :
 
-* *Teste de Carga*: tem como objetivo avaliar a capacidade da aplicação de manter a qualidade de desempenho _quando submetida a quantidades_ diversas de usuários ou transações
-* *Teste de Capacidade*: semelhante ao teste de carga, tem como objetivo _identificar os limites que a aplicação_ é capaz de suportar, _dentro de parâmetros de qualidades definidos_, quando submetida a elevação da quantidade de carga de usuários ou transações
-* *Teste de Stress*: tem como objetivo _encontrar o limite da aplicação_ ao submetê-la a cargas que estão no limite ou acima do limite especificado inicialmente de usuários ou transações
-* *Testes de Volume*: tem como objetivo avaliar capacidade da aplicação quando submetida a elevação da _quantidade de dados_ que o sistema pode gerenciar
-* *Testes de Escalabilidade*: tem como objetivo determinar a _eficácia da aplicação_ em suportar o aumento na carga
-
-É importante lembrar que a quantificação, metrificação ou definição dos seguintes termos abaixo relacionados *não se dá em termos absolutos*, isto é cada negócio, cliente, sistema ou funcionalidade podem ter parâmetros de qualidade diferentes para:
-* qualidade de desempenho
-* limite aceitáveis de ... (CPU, tempo de resposta, etc)
-* qual o melhor tipo de teste aplicar
-
-
-### 2.6. Estratégia de Branches (Branch Strategy Workflow)
+### 2.5. Estratégia de Branches (Branch Strategy Workflow)
 
 Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilva/eval-git#38-estrat%C3%A9gia-de-gerenciamento-de-branches) :
 * `master`: pronto para produção
 * `develop`: último desenvolvimento pronto para produção
+
+
+### 2.6. Glossário de Termos (Glossary)
+
+De uma forma geral, vamos tentar <ins>definir</ins> e **_caracterizar_** alguns dos termos utilizados neste projeto de laboratório para permitir uma melhor compreensão e entendimento:
+
+* **Teste de Capacidade ou Capacity Test**: semelhante ao teste de carga, tem como objetivo **_identificar os limites que a aplicação_** é capaz de suportar, **_dentro de parâmetros de qualidades definidos_**, quando submetida a elevação da quantidade de carga de usuários ou transações
+* **Teste de Carga ou Load Test**: tem como objetivo avaliar a capacidade da aplicação de manter a qualidade de desempenho **_quando submetida a quantidades_** diversas de usuários ou transações
+* **Teste de Escalabilidade ou Scalability Test**: tem como objetivo determinar a **_eficácia da aplicação_** em suportar o aumento na carga
+* **Teste de Sanidade ou Sanity Test**: tem como objetivo indentificar se a aplicaçao está **_respondendo corretamente_**
+* **Teste de Estresse ou Stress Test**: tem como objetivo **_encontrar o limite da aplicação_** ao submetê-la a cargas que estão no limite ou acima do limite especificado inicialmente de usuários ou transações
+* **Teste de Volume ou Volume Test**: tem como objetivo avaliar capacidade da aplicação quando submetida a elevação da **_quantidade de dados_** que o sistema pode gerenciar
+
+
+### 2.7. Avisos
+
+É importante lembrar que a quantificação, metrificação ou definição dos parâmetros de qualidade *não se dá em termos absolutos*, isto é cada negócio, cliente, sistema ou funcionalidade podem ter parâmetros de qualidade diferentes para:
+* qualidade de desempenho
+* limite aceitáveis de ... (% CPU, tempo de resposta, etc)
+* qual o melhor tipo de teste aplicar
+
 
 
 ## 3. Projeto
@@ -186,6 +212,8 @@ nodejs-webserver> node nodejs-webserver.js
   * https://en.wikipedia.org/wiki/Application_performance_management
   * [Quais os tipos de testes de desempenho](https://blog.cedrotech.com/entenda-o-que-sao-os-testes-de-desempenho/)
   * [Tipos de Testes de Performance](https://www.youtube.com/watch?v=HhShUc9OarE)
+  * [Introdução e diferença entre Sanity Testing vs Smoke Testing](https://www.guru99.com/smoke-sanity-testing.html)
+  * [Entendendo teste de software: Teste de Sanidade](https://willianjusten.com.br/entendendo-testes-de-software/#smoke)
 * Design Patterns
   * [Service Design Patterns by Martin Fowler](https://martinfowler.com/books/sdp.html)
   * [Service Design Patterns - Request/Response](http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestResponse)
