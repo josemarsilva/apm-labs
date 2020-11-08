@@ -4,24 +4,23 @@
 
 O projeto **apm-labs** consiste em explorar cenários de testes **_Performance Test_**, **_Stress Test_**, **_load Test_** e **_Tuning_** de aplicações.
 
-### Tabela de Conteúdo
-
-1. Introdução
-2. Documentação
-  1. Diagrama de Caso de Uso (Use Case Diagram)
-  2. Diagrama de Implantação (Deploy Diagram)
-  3. Diagrama de BPMN (Business Process Modeling Notation)
-  4. Diagrama de Mapa Mental (Mind Map Diagram)
-  5. Estratégia de Branches (Branch Strategy Workflow)
-  6. Glossário de Termos (Glossary)
-  7. Aviso
-3. Projeto
-  1. Pré-Requisitos, Pré-Condições e Premissas
-  2. Guia do Desenvolvedor e Administrador
-  3. Guia de Implantação, Configuração e Instalação
-  4. Guia de Execução, Demonstração e Cenários de Teste
-  5. Design Patterns, Standard, Conventions and Best Practices
-4. I - Referências
+* Tabela de Conteúdo
+  * Introdução
+  * Documentação
+    * Diagrama de Caso de Uso (Use Case Diagram)
+    * Diagrama de Implantação (Deploy Diagram)
+    * Diagrama de BPMN (Business Process Modeling Notation)
+    * Diagrama de Mapa Mental (Mind Map Diagram)
+    * Estratégia de Branches (Branch Strategy Workflow)
+    * Glossário de Termos (Glossary)
+    * Aviso
+  * Projeto
+    * Pré-Requisitos, Pré-Condições e Premissas
+    * Guia do Desenvolvedor e Administrador
+    * Guia de Implantação, Configuração e Instalação
+    * Guia de Execução, Demonstração e Cenários de Teste
+    * Design Patterns, Standard, Conventions and Best Practices
+  * I - Referências
 
 
 ## 2. Documentação
