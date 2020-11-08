@@ -54,14 +54,14 @@ Sugestão de [estratégia de branches e workflow](https://github.com/josemarsilv
 
 ### 2.6. Glossário de Termos (Glossary)
 
-De uma forma geral, vamos tentar <ins>definir</ins> e **_caracterizar_** alguns dos termos utilizados neste projeto de laboratório para permitir uma melhor compreensão e entendimento:
+De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> alguns dos termos utilizados neste projeto para permitir uma melhor compreensão e entendimento:
 
-* **Teste de Capacidade _(Capacity Test)_**: semelhante ao teste de carga, tem como objetivo **identificar os limites que a aplicação** é capaz de suportar, **dentro de parâmetros de qualidades definidos**, quando submetida a elevação da quantidade de carga de usuários ou transações
-* **Teste de Carga _(Load Test)_**: tem como objetivo avaliar a capacidade da aplicação de manter a qualidade de desempenho **quando submetida a quantidades diversas** de usuários ou transações
-* **Teste de Escalabilidade _(Scalability Test)_**: tem como objetivo determinar a **eficácia da aplicação em suportar aumento de carga**
-* **Teste de Sanidade _(Sanity Test)_**: tem como objetivo indentificar se a aplicaçao está **respondendo corretamente**
-* **Teste de Estresse _(Stress Test)_**: tem como objetivo **encontrar o limite da aplicação** ao submetê-la a cargas que estão no limite ou acima do limite especificado inicialmente de usuários ou transações
-* **Teste de Volume _(Volume Test)_**: tem como objetivo avaliar capacidade da aplicação quando submetida a **elevação da quantidade de dados** que o sistema pode gerenciar
+* **Teste de Capacidade _(Capacity Test)_**: semelhante ao teste de carga, tem como objetivo identificar os limites que a aplicação</ins> é capaz de suportar, <ins>dentro de parâmetros de qualidades definidos</ins>, quando submetida a elevação da quantidade de carga de usuários ou transações
+* **Teste de Carga _(Load Test)_**: tem como objetivo avaliar a capacidade da aplicação de manter a qualidade de desempenho <ins>quando submetida a quantidades diversas</ins> de usuários ou transações
+* **Teste de Escalabilidade _(Scalability Test)_**: tem como objetivo determinar a <ins>eficácia da aplicação em suportar aumento de carga</ins>
+* **Teste de Sanidade _(Sanity Test)_**: tem como objetivo indentificar se a aplicaçao está <ins>respondendo corretamente</ins>
+* **Teste de Estresse _(Stress Test)_**: tem como objetivo <ins>encontrar o limite da aplicação</ins> ao submetê-la a cargas que estão no limite ou acima do limite especificado inicialmente de usuários ou transações
+* **Teste de Volume _(Volume Test)_**: tem como objetivo avaliar capacidade da aplicação quando submetida a <ins>elevação da quantidade de dados</ins> que o sistema pode gerenciar
 
 
 ### 2.7. Avisos
@@ -98,18 +98,17 @@ De uma forma geral, vamos tentar <ins>definir</ins> e **_caracterizar_** alguns 
 
 ### 3.3. Guia de Implantação, Configuração e Instalação
 
-#### a. Instalando NodeJS (em Linux Ubuntu)
+#### a. Instalando/Clonando este repositório no ambiente
 
-* https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server#31-nodejs
+* Windows
 
+```cmd
+C:\> md githome
+C:\> cd githome
+C:\githome> git clone https://github.com/josemarsilva/apm-labs.git
+```
 
-#### b. Instalando Docker e Docker Composer (em Linux Ubuntu)
-
-* https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server/blob/master/README.md#41-docker---installation
-* https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server/blob/master/README.md#42-docker-composer---installation
-
-
-#### c. Instalando/Clonando o repositório `apm-labs` no ambiente
+* Linux
 
 ```sh
 $ sudo mkdir /opt
@@ -118,6 +117,17 @@ $ sudo chown -R $USER:$USER /opt/githome
 $ cd /opt/githome
 $ git clone https://github.com/josemarsilva/apm-labs.git
 ```
+
+
+#### b. Instalando NodeJS (em Linux Ubuntu)
+
+* https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server#31-nodejs
+
+
+#### c. Instalando Docker e Docker Composer (em Linux Ubuntu)
+
+* https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server/blob/master/README.md#41-docker---installation
+* https://github.com/josemarsilva/eval-virtualbox-vm-ubuntu-server/blob/master/README.md#42-docker-composer---installation
 
 
 #### d. Instalando JMeter
@@ -166,6 +176,11 @@ $ rm apache-jmeter-5.3.tgz
 * **Itens de análise, check-list e relatórios**: Quadro comparativo das características de cada ferramenta, facilidades, dificuldades, etc
 
 ##### Executar
+
+* *Construir* os robôs de testes para injetar, rebater e monitorar
+  * Os robôs de teste para *injetar* deverão serforam construído é o ``
+  * Os robôs de teste para *rebater* foram construído é o `nodejs-webserver.js`
+  * Os robôs de teste para *monitorar* é n/a a este cenário
 
 * *Iniciar* o servidor web local *nodejs-webserver*
 
@@ -239,3 +254,7 @@ nodejs-webserver> node nodejs-webserver.js
   * [JMeter - Teste de Performance](https://www.devmedia.com.br/teste-de-performance-com-jmeter/34621)
 * Testes de Performance
   * [Introdução a Teste de Performance de Software](https://www.softwaretestinghelp.com/introduction-to-performance-testing-loadrunner-training-tutorial-part-1/)
+* Github README.md writing sintax
+  * [Basic Github Markdown Writing Format](https://docs.github.com/pt/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax)  
+  * [Github Markdown Chead Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+  * [Github Mastering Markdown](https://guides.github.com/features/mastering-markdown/#what)
