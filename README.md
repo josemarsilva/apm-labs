@@ -189,6 +189,8 @@ $ rm apache-jmeter-5.3.tgz
 
 ##### Executar
 
+###### Cenário-01
+
 * *Iniciar* o servidor web local *nodejs-webserver*
 
 ```cmd
@@ -213,6 +215,7 @@ nodejs-webserver> node nodejs-webserver.js
   * Encontre a diferença de tempo entre data e hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
+* *Encerrar* o teste do cenário dando ^C na tela do Windows Command que está rodando o `nodejs-webserver.js`
 
 
 
