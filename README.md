@@ -67,10 +67,7 @@ De uma forma geral, vamos tentar <ins>definir</ins> e **_caracterizar_** alguns 
 
 ### 2.7. Avisos
 
-É importante lembrar que a quantificação, metrificação ou definição dos parâmetros de qualidade *não se dá em termos absolutos*, isto é cada negócio, cliente, sistema ou funcionalidade podem ter parâmetros de qualidade diferentes para:
-* qualidade de desempenho
-* limite aceitáveis de ... (% CPU, tempo de resposta, etc)
-* qual o melhor tipo de teste aplicar
+É importante lembrar que a quantificação, metrificação ou definição dos parâmetros de qualidade *não se dá em termos absolutos*, isto é cada negócio, cliente, sistema ou funcionalidade podem ter parâmetros de qualidade diferentes para: qualidade de desempenho, limite aceitáveis de ... (% CPU, tempo de resposta, etc) e definição de qual o melhor tipo de teste aplicar
 
 
 
@@ -81,17 +78,17 @@ De uma forma geral, vamos tentar <ins>definir</ins> e **_caracterizar_** alguns 
 #### a. Tecnologias e ferramentas
 
 * NodeJS
-* Docker
 * JMeter
-* SOAP UI
-* Postman
-* Curl(Window e Linux)
+* Docker (ou ambiente com todas ferramentas instaladas e disponíveis)
+* SOAP UI (apenas para sanidade e comparativo)
+* Postman (apenas para sanidade e comparativo)
+* Curl(Window e Linux - apenas para sanidade e comparativo)
+* VirtualBox (ou ambiente linux disponível)
 
 
 #### b. Ferramental de apoio
 
 * Ferramenta: [Draw.IO](https://app.diagrams.net/) (_apoio_: necessário para editar os diagramas UML)
-* Ferramenta: Plugin do Chrome - Draw IO (_apoio_: necessário para editar os diagramas UML)
 
 
 ### 3.2. Guia do Desenvolvedor e Administrador
@@ -150,16 +147,17 @@ $ rm apache-jmeter-5.3.tgz
 
 | Cenário      | Detalhamento |
 | :---         |     :---:    |
-| Cenário-01   | *Teste de Carga (Load Test)* da aplicação com um *Browser* |
-| Cenário-02   | *Teste de Carga (Load Test)* da aplicação com um *Curl(windows)* |
-| Cenário-03   | *Teste de Carga (Load Test)* da aplicação com um *Postman* |
-| Cenário-04   | *Teste de Carga (Load Test)* da aplicação com um *SoapUI* |
+| Cenário-01   | *Teste de Carga (Load Test)* da aplicação com um `Browser` |
+| Cenário-02   | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` |
+| Cenário-03   | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
+| Cenário-04   | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
+| Cenário-05   | *Teste de Carga (Load Test)* da aplicação com um `JMeter` |
 
 
 * **Quantidades, rampa de subida, tempo e vazão**:
 
 | Quantidade _(qty)_ | Rampa _(ramp up)_ | Tempo _(dur)_ | Vazão _(throughput)_ | Obs  |
-| ---:               |     :---:         |   :---:       | :---                 | :--- |
+| ---:               | :---:             | :---:         | :---                 | :--- |
 | 1000               | n/a               | n/a           | 1 threads            | n/a  |
 
 
