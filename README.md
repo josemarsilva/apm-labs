@@ -173,8 +173,7 @@ $ rm apache-jmeter-5.3.tgz
 
 * **Amostra da carga "payload" e "test-data"**: n/a
 * **Infraestrutura, arquitetura e sequência**:
-
-* Intel Core i5-8250U CPU @ 1.60 GHz 1.80 GHz - RAM 16 GB - Windows 10 Pro
+  * Intel Core i5-8250U CPU @ 1.60 GHz 1.80 GHz - RAM 16 GB - Windows 10 Pro
 
 ![DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png](./doc/DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png) 
 
@@ -219,7 +218,7 @@ nodejs-webserver> node nodejs-webserver.js
   * Encontre a diferença de tempo entre data e hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
-* *Encerrar* o teste do cenário dando ^C na tela do Windows Command que está rodando o `nodejs-webserver.js`
+* *Encerrar* o robô rebatedor `nodejs-webserver.js` iniciado com um ^C na tela do Windows Command onde ele está sendo executado
 
 * *Iniciar* o servidor JSON web local *nodejs-jsonserver*
 
@@ -228,7 +227,7 @@ apm-labs> cd src/nodejs-jsonserver
 ```cmd
 apm-labs> cd src/nodejs-jsonserver
 nodejs-jsonserver> npm install json-server
-nodejs-jsonserver> echo nodejs-jsonserver ou a linha de comando abaixo
+nodejs-jsonserver> echo nodejs-jsonserver.bat ou a linha de comando abaixo
 nodejs-jsonserver> json-server --watch db-users.json
   \{^_^}/ hi!
   Loading db-users.json
@@ -288,7 +287,7 @@ nodejs-webserver> node nodejs-webserver.js
   * Encontre a diferença média entre a data/hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
-* *Encerrar* o teste do cenário dando ^C na tela do Windows Command que está rodando o `nodejs-webserver.js`
+* *Encerrar* o robô rebatedor `nodejs-webserver.js` iniciado com um ^C na tela do Windows Command onde ele está sendo executado
 
 * *Iniciar* o servidor JSON web local *nodejs-jsonserver*
 
@@ -297,7 +296,7 @@ apm-labs> cd src/nodejs-jsonserver
 ```cmd
 apm-labs> cd src/nodejs-jsonserver
 nodejs-jsonserver> npm install json-server
-nodejs-jsonserver> echo nodejs-jsonserver ou a linha de comando abaixo
+nodejs-jsonserver> echo nodejs-jsonserver.bat ou a linha de comando abaixo
 nodejs-jsonserver> json-server --watch db-users.json
   \{^_^}/ hi!
   Loading db-users.json
@@ -322,7 +321,7 @@ nodejs-jsonserver> json-server --watch db-users.json
   * Encontre a diferença média entre a data/hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
-* *Encerrar* o teste do cenário dando ^C na tela do Windows Command que está rodando o `nodejs-jsonserver`
+* *Encerrar* o robô rebatedor `nodejs-jsonserver` iniciado com um ^C na tela do Windows Command onde ele está sendo executado
 
 
 ###### Cenário-03
@@ -354,6 +353,46 @@ nodejs-jsonserver> json-server --watch db-users.json
   * Execute o script GET [http://localhost:3000/users]
   * Observe os seguintes campos de resultados:
     * Status: 200 OK - Time: 515 ms - Size: 745 B
+  * Encontre média em segundos das requisições
+  * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
+
+
+###### Cenário-04
+
+* *Iniciar* o servidor JSON web local *nodejs-jsonserver*
+
+```cmd
+apm-labs> cd src/nodejs-jsonserver
+```cmd
+apm-labs> cd src/nodejs-jsonserver
+nodejs-jsonserver> npm install json-server
+nodejs-jsonserver> echo nodejs-jsonserver.bat ou a linha de comando abaixo
+nodejs-jsonserver> json-server --watch db-users.json
+  \{^_^}/ hi!
+  Loading db-users.json
+  Done
+  Resources
+  http://localhost:3000/users
+  Home
+  http://localhost:3000
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+```
+
+* *Executar* um *Teste de Carga (Load Test)* do `Cenário-04`:
+  * Execute a ferramenta [`SoapUI`](https://www.soapui.org/downloads/soapui/)
+  * Abra o projeto SoapUI `apm-labs` ou crie um novo projeto com o nome `apm-labs` e em seguida selecione-o
+  * Com o *Project* `apm-labs` selecionado, em seguida selecione o *Test Suite* com o nome `cenario-04` 
+  * Com o *Test Suite* `cenario-04` selecionado, em seguida selecione o *Test Case* com nome `REST JSON GET /users TestCase`
+  * Com o *Test Case* `REST JSON GET /users TestCase` selecionado, em seguida selecione abaixo de `Test Steps` o *REST TestRequest* com nome `Request GET /users REST Test Request`
+  * Com o *Project* `apm-labs` selecionado, em seguida clique com o botão invertido do mouse para abrir o menu de opções e selecione a *Menu Option* com o nome `Launch TestRunner`
+  * Com a caixa de diálogo `Launch TestRunner` aberta:
+    * Clique na aba `Basic` e em seguida no combo-box `Test Suite` selecione a opção `cenario-04`
+    * Clique na aba `Basic` e em seguida no combo-box `Test Case` selecione a opção `REST JSON GET /users TestCase`
+    * Clique na aba `Reports` e em seguida no check-box `Prints a summary reports to Conseole` marque-o como selecionado
+    * Clique na aba `Basic` e em seguida no botão `Launch` clique para executar
+  * Observe os seguintes campos de resultados:
+    * Time Taken: 183ms
   * Encontre média em segundos das requisições
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
