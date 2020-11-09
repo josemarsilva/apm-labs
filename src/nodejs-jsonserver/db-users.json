@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "josemarsilva",
+      "email": "josemarsilva@yahoo.com.br",
+      "name": "Josemar Silva",
+      "status": "active",
+      "phone": "+55 11 3303-3200",
+      "website": "https://josemarsilva.s3.amazonaws.com/index.html",
+      "company": {
+        "name": "Inmetrics",
+        "website": "http://www.inmetrics.com.br"
+      }
+    }
+  ]
+}

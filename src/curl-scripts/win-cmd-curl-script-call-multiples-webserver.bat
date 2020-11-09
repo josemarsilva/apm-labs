@@ -7,6 +7,7 @@ SET PARAM_QTY_THREADS=10
 REM Observacoes: n/a
 REM # #########################################################################
 
+REM # #########################################################################
 ECHO.
 ECHO %SCRIPT_NAME% - %SCRIPT_DESCRIPTION%
 ECHO Parametros:
@@ -20,13 +21,15 @@ SET BEGIN_TIME=%TIME%
 ECHO Begin Date/Time: %BEGIN_DATE% %BEGIN_TIME%
 ECHO.
 
+REM # #########################################################################
 ECHO Removendo (.log) 
-DEL /Q win-cmd-curl-script-call-multiples-webserver-*.log
+SET PARAM_FILENAME=%PARAM_SCRIPT_CALLED:.bat=%
+DEL /Q  %PARAM_FILENAME%*.log
 
 REM # #########################################################################
 FOR /L %%G in (1,1,%PARAM_QTY_THREADS%) DO (
     ECHO  Thread # %%G
-    START cmd /c win-cmd-curl-script-webserver.bat ^> win-cmd-curl-script-webserver-%%G.log
+    START cmd /c %PARAM_FILENAME%.bat ^> %PARAM_FILENAME%-%%G.log
 )
 
 REM # #########################################################################

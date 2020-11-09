@@ -1,8 +1,8 @@
 ECHO OFF
 REM # #########################################################################
-SET SCRIPT_NAME=win-cmd-curl-script-webserver.bat
-SET SCRIPT_DESCRIPTION=Robo de Teste para *injetar* requisicoes HTTP web server
-SET PARAM_HTTP_URL=http://localhost:3000
+SET SCRIPT_NAME=win-cmd-curl-script-json-rest-server.bat
+SET SCRIPT_DESCRIPTION=Robo de Teste para *injetar* requisicoes REST no JSON server
+SET PARAM_REST_JSON_URL=http://localhost:3000/users
 SET PARAM_QTY_REQUEST=100
 REM Observacoes: n/a
 REM # #########################################################################
@@ -11,7 +11,7 @@ REM # #########################################################################
 ECHO.
 ECHO %SCRIPT_NAME% - %SCRIPT_DESCRIPTION%
 ECHO Parametros:
-ECHO   - URL     : %PARAM_HTTP_URL%
+ECHO   - URL     : %PARAM_REST_JSON_URL%
 ECHO   - Requests: %PARAM_QTY_REQUEST%
 ECHO.
 
@@ -23,7 +23,7 @@ ECHO.
 
 REM # #########################################################################
 FOR /L %%G in (1,1,%PARAM_QTY_REQUEST%) DO (
-    curl %PARAM_HTTP_URL%
+    curl %PARAM_REST_JSON_URL%
     ECHO  - # %%G
 )
 

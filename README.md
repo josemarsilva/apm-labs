@@ -146,7 +146,7 @@ $ rm apache-jmeter-5.3.tgz
 
 ### 3.4. Guia de Execução, Demonstração e Cenários de Teste
 
-#### 3.4.1. Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (Web Server)
+#### 3.4.1. Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer)
 
 ##### Planejar
 
@@ -156,7 +156,7 @@ $ rm apache-jmeter-5.3.tgz
 
 | Cenário | Detalhamento |
 | :------ | :---         |
-| 01      | *Teste de Carga (Load Test)* da aplicação com um `Browser` |
+| 01      | *Teste de Sanidade (Sanity Test)* da aplicação com um `Browser` com variações de HTTP e JSON REST server |
 | 02      | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações de quantidades, rampa de subida, tempo e vazão |
 | 03      | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
 | 04      | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
@@ -167,7 +167,7 @@ $ rm apache-jmeter-5.3.tgz
 
 | Quantidade _(qty)_ | Rampa _(ramp up)_ | Tempo _(dur)_ | Vazão _(throughput)_ | Obs  |
 | ---:               | :---:             | :---:         | :---                 | :--- |
-| 1000 _requests_    | n/a               | n/a           | Cenários com 1 e 10 _threads_ simultâneas | n/a  |
+| 100 _requests_     | n/a               | n/a           | Cenários com 1 e 10 _threads_ simultâneas | n/a  |
 
 
 * **Amostra da carga "payload" e "test-data"**: n/a
@@ -191,14 +191,14 @@ $ rm apache-jmeter-5.3.tgz
 
 ###### Cenário-01
 
-* *Iniciar* o servidor web local *nodejs-webserver*
+* *Iniciar* o servidor HTTP web local *nodejs-webserver*
 
 ```cmd
 apm-labs> cd src/nodejs-webserver
 nodejs-webserver> node nodejs-webserver.js
 ```
 
-* *Executar* um *Teste de Sanidade (Sanity Test)* com o `Cenário-01` abrindo a seguinte URL pelo browser de sua máquina
+* *Executar* um *Teste de Sanidade (Sanity Test)* do `Cenário-01` abrindo a seguinte URL pelo browser de sua máquina
 
 ```url
 +--------------------------+
@@ -208,7 +208,7 @@ nodejs-webserver> node nodejs-webserver.js
 +--------------------------+
 ```
 
-* *Executar* os *Teste de Carga (Load Test)* com o `Cenário-01`:
+* *Executar* os *Teste de Carga (Load Test)* do `Cenário-01`:
   * Marque a data e hora inicial
   * Agora clique no botão F5(Refresh) a quantidade de vezes planejadas (kkkkkk)
   * Marque a data e hora final
@@ -217,22 +217,68 @@ nodejs-webserver> node nodejs-webserver.js
 
 * *Encerrar* o teste do cenário dando ^C na tela do Windows Command que está rodando o `nodejs-webserver.js`
 
+* *Iniciar* o servidor JSON web local *nodejs-jsonserver*
+
+```cmd
+apm-labs> cd src/nodejs-jsonserver
+```cmd
+apm-labs> cd src/nodejs-jsonserver
+nodejs-jsonserver> npm install json-server
+nodejs-jsonserver> echo nodejs-jsonserver ou a linha de comando abaixo
+nodejs-jsonserver> json-server --watch db-users.json
+  \{^_^}/ hi!
+  Loading db-users.json
+  Done
+  Resources
+  http://localhost:3000/users
+  Home
+  http://localhost:3000
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+```
+
+* *Executar* um *Teste de Sanidade (Sanity Test)* do `Cenário-01.b` abrindo a seguinte URL pelo browser de sua máquina
+
+```url
++---------------------------------------------------------------------+
+| http://localhost:3000/users                                         |
++---------------------------------------------------------------------+
+|                                                                     |
+| [                                                                   |
+|   {                                                                 |
+|     "id": 1,                                                        |
+|     "username": "josemarsilva",                                     |
+|     "email": "josemarsilva@yahoo.com.br",                           |
+|     "name": "Josemar Silva",                                        |
+|     "status": "active",                                             |
+|     "phone": "+55 11 3303-3200",                                    |
+|     "website": "https://josemarsilva.s3.amazonaws.com/index.html",  |
+|     "company": {                                                    |
+|       "name": "Inmetrics",                                          |
+|       "website": "http://www.inmetrics.com.br"                      |
+|     }                                                               |
+|   }                                                                 |
+|   ]                                                                 |
++---------------------------------------------------------------------+
+```
+
+
 ###### Cenário-02
 
-* *Iniciar* o servidor web local *nodejs-webserver*
+* *Iniciar* o servidor HTTP web local *nodejs-webserver*
 
 ```cmd
 apm-labs> cd src/nodejs-webserver
 nodejs-webserver> node nodejs-webserver.js
 ```
 
-* *Executar* os *Teste de Carga (Load Test)* com o `Cenário-02`:
+* *Executar* os *Teste de Carga (Load Test)* do `Cenário-02`:
   * Execute `win-cmd-curl-script-webserver.bat`
   * Marque a data/hora inicial e final
   * Encontre a diferença de tempo entre data/hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
-* *Executar* os *Teste de Carga (Load Test)* com o `Cenário-02.b`:
+* *Executar* os *Teste de Carga (Load Test)* do `Cenário-02.b`:
   * Execute `win-cmd-curl-script-call-multiples-webserver.bat`
   * Obtenha a data/hora inicial e final em cada um dos arquivos (.log) de nomenclatura `win-cmd-curl-script-call-multiples-webserver-*.log`
   * Encontre a diferença média entre a data/hora final e inicial em segundos e divida pela quantidade
@@ -240,11 +286,80 @@ nodejs-webserver> node nodejs-webserver.js
 
 * *Encerrar* o teste do cenário dando ^C na tela do Windows Command que está rodando o `nodejs-webserver.js`
 
+* *Iniciar* o servidor JSON web local *nodejs-jsonserver*
+
+```cmd
+apm-labs> cd src/nodejs-jsonserver
+```cmd
+apm-labs> cd src/nodejs-jsonserver
+nodejs-jsonserver> npm install json-server
+nodejs-jsonserver> echo nodejs-jsonserver ou a linha de comando abaixo
+nodejs-jsonserver> json-server --watch db-users.json
+  \{^_^}/ hi!
+  Loading db-users.json
+  Done
+  Resources
+  http://localhost:3000/users
+  Home
+  http://localhost:3000
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+```
+
+* *Executar* um *Teste de Sanidade (Sanity Test)* do `Cenário-02.c`:
+  * Execute `win-cmd-curl-script-json-rest-server.bat`
+  * Marque a data/hora inicial e final
+  * Encontre a diferença de tempo entre data/hora final e inicial em segundos e divida pela quantidade
+  * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
+
+* *Executar* os *Teste de Carga (Load Test)* com o `Cenário-02.d`:
+  * Execute `win-cmd-curl-script-call-multiples-json-rest-server.bat`
+  * Obtenha a data/hora inicial e final em cada um dos arquivos (.log) de nomenclatura `win-cmd-curl-script-json-rest-server-*.log`
+  * Encontre a diferença média entre a data/hora final e inicial em segundos e divida pela quantidade
+  * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
+
+* *Encerrar* o teste do cenário dando ^C na tela do Windows Command que está rodando o `nodejs-jsonserver`
+
+
+###### Cenário-03
+
+* *Iniciar* o servidor JSON web local *nodejs-jsonserver*
+
+```cmd
+apm-labs> cd src/nodejs-jsonserver
+```cmd
+apm-labs> cd src/nodejs-jsonserver
+nodejs-jsonserver> npm install json-server
+nodejs-jsonserver> echo nodejs-jsonserver ou a linha de comando abaixo
+nodejs-jsonserver> json-server --watch db-users.json
+  \{^_^}/ hi!
+  Loading db-users.json
+  Done
+  Resources
+  http://localhost:3000/users
+  Home
+  http://localhost:3000
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+```
+
+* *Executar* um *Teste de Carga (Load Test)* do `Cenário-03`:
+  * Execute a ferramenta [`Postman`](https://www.postman.com/downloads/)
+  * Importe a coleção (_Collections_) de _Scripts Postman_ a partir da seguinte url:
+    * https://www.getpostman.com/collections/1da862e11dc1c41dd8d9
+  * Execute o script GET [http://localhost:3000/users]
+  * Observe os seguintes campos de resultados:
+    * Status: 200 OK - Time: 515 ms - Size: 745 B
+  * Encontre média em segundos das requisições
+  * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
 
 ### 3.5. Design Patterns, Standard, Conventions and Best Practices
 
-* n/a
+![SequenceDiagram-Context-SynchronousRequestResponse.png](./doc/SequenceDiagram-Context-SynchronousRequestResponse.png) 
+
+![SequenceDiagram-Context-SynchronousRequestAcknowledge.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledge.png) 
+
 
 
 ## I - Referências
@@ -274,6 +389,7 @@ nodejs-webserver> node nodejs-webserver.js
   * [Overview of Blocking vs Non-Blocking](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/)
   * [NodeJS Primeiros Passos: Servidor HTTP Básico](https://www.youtube.com/watch?v=5L5-EoJbMfY)
   * [NodeJS Assíncrono: Entenda de vez Callbacks, Promises e Async/Await](https://www.youtube.com/watch?v=7Bs4-rqbCQc)
+  * [NodeJs Json Server](https://www.npmjs.com/package/json-server)
 * JMeter
   * [JMeter - Testes de Carga](http://shipit.resultadosdigitais.com.br/blog/testes-de-carga-com-jmeter/)
   * [JMeter - Teste de Performance](https://www.devmedia.com.br/teste-de-performance-com-jmeter/34621)
