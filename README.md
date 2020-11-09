@@ -409,15 +409,15 @@ nodejs-jsonserver> json-server --watch db-users.json
 
 * Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
 
-![SequenceDiagram-Context-SynchronousRequestAcknowledgePoll.png](SequenceDiagram-Context-SynchronousRequestAcknowledgePoll.png)
+![SequenceDiagram-Context-SynchronousRequestAcknowledgePoll.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgePoll.png)
 
 * Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
 
-![SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png](SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png)
+![SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png)
 
 * Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
 
-![SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayCallback.png](SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayCallback.png)
+![SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayCallback.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayCallback.png)
 
 
 ## I - Referências
