@@ -18,6 +18,7 @@ O projeto **apm-labs** consiste em explorar cenários de testes **_Performance T
     * Pré-Requisitos, Pré-Condições e Premissas
     * Guia do Desenvolvedor e Administrador
     * Guia de Implantação, Configuração e Instalação
+      * Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer)
     * Guia de Execução, Demonstração e Cenários de Teste
     * Design Patterns, Standard, Conventions and Best Practices
   * I - Referências
