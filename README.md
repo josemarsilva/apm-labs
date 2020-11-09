@@ -177,7 +177,7 @@ $ rm apache-jmeter-5.3.tgz
 
 ![DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png](./doc/DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png) 
 
-![SequenceDiagram-Context-SynchronousRequestResponse.png](./doc/SequenceDiagram-Context-SynchronousRequestResponse.png) 
+  * Diagrama de Sequência: [Diagrama de Sequencia - Synchronous Request/Response](./README.md#diagrama-de-sequencia---synchronous-request--response) 
 
 * **Monitoramento**: n/a
 * **Construção robôs de testes: injetar, rebater e monitorar**:
