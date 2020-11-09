@@ -157,11 +157,11 @@ $ rm apache-jmeter-5.3.tgz
 
 | Cenário | Detalhamento |
 | :------ | :---         |
-| 01      | *Teste de Sanidade (Sanity Test)* da aplicação com um `Browser` com variações: (HTTP WEB e JSON REST server) |
-| 02      | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações: (HTTP WEB e JSON REST server) e variações de (quantidades, rampa de subida, tempo e vazão) |
-| 03      | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
-| 04      | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
-| 05      | *Teste de Carga (Load Test)* da aplicação com um `JMeter` |
+| **01**  | *Teste de Sanidade (Sanity Test)* da aplicação com um `Browser` com variações: (HTTP WEB e JSON REST server) |
+| **02**  | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações: (HTTP WEB e JSON REST server) e variações de (quantidades, rampa de subida, tempo e vazão) |
+| **03**  | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
+| **04**  | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
+| **05**  | *Teste de Carga (Load Test)* da aplicação com um `JMeter` |
 
 
 * **Quantidades, rampa de subida, tempo e vazão**:
@@ -173,6 +173,8 @@ $ rm apache-jmeter-5.3.tgz
 
 * **Amostra da carga "payload" e "test-data"**: n/a
 * **Infraestrutura, arquitetura e sequência**:
+
+* Intel Core i5-8250U CPU @ 1.60 GHz 1.80 GHz - RAM 16 GB - Windows 10 Pro
 
 ![DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png](./doc/DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png) 
 
@@ -366,6 +368,17 @@ nodejs-jsonserver> json-server --watch db-users.json
 
 ![SequenceDiagram-Context-SynchronousRequestAcknowledge.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledge.png) 
 
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
+
+![SequenceDiagram-Context-SynchronousRequestAcknowledgePoll.png](SequenceDiagram-Context-SynchronousRequestAcknowledgePoll.png)
+
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
+
+![SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png](SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png)
+
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
+
+![SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayCallback.png](SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayCallback.png)
 
 
 ## I - Referências
