@@ -399,23 +399,23 @@ nodejs-jsonserver> json-server --watch db-users.json
 
 ### 3.5. Design Patterns, Standard, Conventions and Best Practices
 
-* Diagrama de Sequencia - Synchronous Request / Response
+#### Diagrama de Sequencia - Synchronous Request / Response
 
 ![SequenceDiagram-Context-SynchronousRequestResponse.png](./doc/SequenceDiagram-Context-SynchronousRequestResponse.png) 
 
-* Diagrama de Sequencia - Synchronous Request / Acknowledge
+#### Diagrama de Sequencia - Synchronous Request / Acknowledge
 
 ![SequenceDiagram-Context-SynchronousRequestAcknowledge.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledge.png) 
 
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
+#### Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
 
 ![SequenceDiagram-Context-SynchronousRequestAcknowledgePoll.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgePoll.png)
 
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
+#### Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
 
 ![SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png)
 
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
+#### Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
 
 ![SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayCallback.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayCallback.png)
 
