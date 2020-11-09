@@ -156,8 +156,8 @@ $ rm apache-jmeter-5.3.tgz
 
 | Cenário | Detalhamento |
 | :------ | :---         |
-| 01      | *Teste de Sanidade (Sanity Test)* da aplicação com um `Browser` com variações de HTTP e JSON REST server |
-| 02      | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações de quantidades, rampa de subida, tempo e vazão |
+| 01      | *Teste de Sanidade (Sanity Test)* da aplicação com um `Browser` com variações: (HTTP WEB e JSON REST server) |
+| 02      | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações: (HTTP WEB e JSON REST server) e variações de (quantidades, rampa de subida, tempo e vazão) |
 | 03      | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
 | 04      | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
 | 05      | *Teste de Carga (Load Test)* da aplicação com um `JMeter` |
@@ -175,6 +175,7 @@ $ rm apache-jmeter-5.3.tgz
 
 ![DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png](./doc/DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png) 
 
+![SequenceDiagram-Context-SynchronousRequestResponse.png](./doc/SequenceDiagram-Context-SynchronousRequestResponse.png) 
 
 * **Monitoramento**: n/a
 * **Construção robôs de testes: injetar, rebater e monitorar**:
@@ -356,7 +357,11 @@ nodejs-jsonserver> json-server --watch db-users.json
 
 ### 3.5. Design Patterns, Standard, Conventions and Best Practices
 
+* Diagrama de Sequencia - Synchronous Request / Response
+
 ![SequenceDiagram-Context-SynchronousRequestResponse.png](./doc/SequenceDiagram-Context-SynchronousRequestResponse.png) 
+
+* Diagrama de Sequencia - Synchronous Request / Acknowledge
 
 ![SequenceDiagram-Context-SynchronousRequestAcknowledge.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledge.png) 
 
