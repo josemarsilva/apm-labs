@@ -29,10 +29,12 @@
 * **Amostra da carga "payload" e "test-data"**: n/a
 * **Infraestrutura, arquitetura e sequência**:
   * Intel Core i5-8250U CPU @ 1.60 GHz 1.80 GHz - RAM 16 GB - Windows 10 Pro
-  * Diagrama de Sequência: [Diagrama de Sequencia - Synchronous Request/Response](./README.md#diagrama-de-sequencia---synchronous-request--response) 
-  * Diagrama de Implantação:
 
+*
+  *
 ![DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png](./doc/DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png) 
+
+![SequenceDiagram-Context-SynchronousRequestResponse.png](./doc/SequenceDiagram-Context-SynchronousRequestResponse.png) 
 
 
 * **Monitoramento**: n/a
