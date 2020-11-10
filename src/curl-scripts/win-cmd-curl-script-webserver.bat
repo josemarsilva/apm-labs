@@ -3,7 +3,7 @@ REM # #########################################################################
 SET SCRIPT_NAME=win-cmd-curl-script-webserver.bat
 SET SCRIPT_DESCRIPTION=Robo de Teste para *injetar* requisicoes HTTP web server
 SET PARAM_HTTP_URL=http://localhost:3000
-SET PARAM_QTY_REQUEST=100
+SET PARAM_QTY_REQUEST=1000
 REM Observacoes: n/a
 REM # #########################################################################
 

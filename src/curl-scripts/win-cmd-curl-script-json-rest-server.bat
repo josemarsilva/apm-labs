@@ -3,7 +3,7 @@ REM # #########################################################################
 SET SCRIPT_NAME=win-cmd-curl-script-json-rest-server.bat
 SET SCRIPT_DESCRIPTION=Robo de Teste para *injetar* requisicoes REST no JSON server
 SET PARAM_REST_JSON_URL=http://localhost:3000/users
-SET PARAM_QTY_REQUEST=100
+SET PARAM_QTY_REQUEST=1000
 REM Observacoes: n/a
 REM # #########################################################################
 
