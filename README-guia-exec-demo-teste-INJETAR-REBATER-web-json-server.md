@@ -43,6 +43,7 @@
     * *Curl* scripts ( `win-cmd-curl-script-webserver.bat`, `win-cmd-curl-script-json-rest-server.bat`, `win-cmd-curl-script-call-multiples-webserver.bat`, `win-cmd-curl-script-call-multiples-json-rest-server.bat` ) construído e disponível em `./src/curl-scripts`
     * *Postman* collection script construído e disponível em `https://www.getpostman.com/collections/1da862e11dc1c41dd8d9`
     * *SoapUI* project `apm-labs-soapui-project.xml` construído e disponível em `./src/soapui-projects`
+    * *JMeter* scripts ( `jmeter-script-webserver-05.jmx`, `jmeter-script-webserver-05b.jmx`, `jmeter-script-jsonserver-05c.jmx` e `jmeter-script-jsonserver-05d.jmx` ) construído e disponível em `./src/jmeter-scripts`
   * Os robôs de teste para _rebater_:
     * `nodejs-webserver.js` construído e disponível em `./src/nodejs-webserver`
     * `nodejs-jsonserver.bat` construído e disponível em `./src/nodejs-jsonserver`
