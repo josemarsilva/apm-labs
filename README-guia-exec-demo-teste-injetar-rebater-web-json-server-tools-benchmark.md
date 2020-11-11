@@ -15,15 +15,15 @@
 | Cenário | Detalhamento |
 | :------ | :---         |
 | **01**  | *Teste de Sanidade (Sanity Test)* da aplicação com um `Browser` com variações: (HTTP WEB e JSON REST server) |
-| **02**  | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações: (HTTP WEB e JSON REST server) e variações de (quantidades, rampa de subida, tempo e vazão) |
+| **02**  | *Teste de Carga (Load Test)* da aplicação com um `Curl(windows)` com variações: (HTTP WEB e JSON REST server) e variações de (quantidades, rampa de subida, tempo e usuários simultâneos) |
 | **03**  | *Teste de Carga (Load Test)* da aplicação com um `Postman` |
 | **04**  | *Teste de Carga (Load Test)* da aplicação com um `SoapUI` |
 | **05**  | *Teste de Carga (Load Test)* da aplicação com um `JMeter` |
 
 
-* **Quantidades, rampa de subida, tempo e vazão**:
+* **Quantidades, rampa de subida, tempo e usuários simultâneos**:
 
-| Quantidade _(qty)_ | Rampa _(ramp-up)_ | Tempo _(dur)_ | Vazão _(throughput)_ | Obs  |
+| Quantidade _(qty)_ | Rampa _(ramp-up)_ | Tempo _(dur)_ | Usuários _(threads)_ | Obs  |
 | ---:               | :---:             | :---:         | :---                 | :--- |
 | 1000 _requests_    | n/a               | n/a           | Cenários com 1 e 10 _threads_ simultâneas | n/a  |
 
@@ -277,7 +277,7 @@ nodejs-webserver> node nodejs-webserver.js
   * Observe que abaixo de nosso *Thread Group* há um *HTTP Request* está configurado para acessar o endereço de nosso servidor `nodejs-webserver.js` na url `http://localhost` e porta `3000`.
   * Observe também que há alguns itens especiais: `View Results in Table`, `View Results in Tree` e `Summary Report`. Vamos falar mais deles após a execução
   * Clique na opção de menu `Run >> Clear All` e em seguida na opção de menu `Run >> Start`
-  * Selecione os itens:  `View Results in Table`, `View Results in Tree` e `Summary Report`. Observe que todas as métricas da execução encontram-se neles, tais como as métricas individualizadas de cada execução, quantidade de amostras, % de erro de execução, tempos de cada requisição e métricas sumarizadas de tempos médio, mínimo, máximo e Throughput
+  * Selecione os itens:  `View Results in Table`, `View Results in Tree` e `Summary Report`. Observe que todas as métricas da execução encontram-se neles, tais como as métricas individualizadas de cada execução, quantidade de amostras, % de erro de execução, tempos de cada requisição e métricas sumarizadas de tempos médio, mínimo, máximo e usuários simultâneos
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
 ###### Cenário-05.b
@@ -286,7 +286,7 @@ nodejs-webserver> node nodejs-webserver.js
   * Com a ferramenta *JMeter* iniciada, selecione e abra o script do JMeter (.jmx) `jmeter-script- webserver-05b.jmx` 
   * Observe que neste script o *Thread Group* está configurado com *Number of Threads(users)* = 10
   * Clique na opção de menu `Run >> Clear All` e em seguida na opção de menu `Run >> Start`
-  * Selecione os itens:  `View Results in Table`, `View Results in Tree` e `Summary Report`. Observe que todas as métricas da execução encontram-se neles, tais como as métricas individualizadas de cada execução, quantidade de amostras, % de erro de execução, tempos de cada requisição e métricas sumarizadas de tempos médio, mínimo, máximo e Throughput
+  * Selecione os itens:  `View Results in Table`, `View Results in Tree` e `Summary Report`. Observe que todas as métricas da execução encontram-se neles, tais como as métricas individualizadas de cada execução, quantidade de amostras, % de erro de execução, tempos de cada requisição e métricas sumarizadas de tempos médio, mínimo, máximo e usuários simultâneos
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
 ###### Cenário-05.c
@@ -318,7 +318,7 @@ nodejs-jsonserver> json-server --watch db-users.json
   * Observe que neste script o *HTTP Request* está configurado com *Path* = `/users`
   * Observe que neste script o *Thread Group* está configurado com *Number of Threads(users)* = 1
   * Clique na opção de menu `Run >> Clear All` e em seguida na opção de menu `Run >> Start`
-  * Selecione os itens:  `View Results in Table`, `View Results in Tree` e `Summary Report`. Observe que todas as métricas da execução encontram-se neles, tais como as métricas individualizadas de cada execução, quantidade de amostras, % de erro de execução, tempos de cada requisição e métricas sumarizadas de tempos médio, mínimo, máximo e Throughput
+  * Selecione os itens:  `View Results in Table`, `View Results in Tree` e `Summary Report`. Observe que todas as métricas da execução encontram-se neles, tais como as métricas individualizadas de cada execução, quantidade de amostras, % de erro de execução, tempos de cada requisição e métricas sumarizadas de tempos médio, mínimo, máximo e usuários simultâneos
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
 * *Executar* os *Teste de Carga (Load Test)* do `Cenário-05.d`:
@@ -326,7 +326,7 @@ nodejs-jsonserver> json-server --watch db-users.json
   * Observe que neste script o *HTTP Request* está configurado com *Path* = `/users`
   * Observe que neste script o *Thread Group* está configurado com *Number of Threads(users)* = 10
   * Clique na opção de menu `Run >> Clear All` e em seguida na opção de menu `Run >> Start`
-  * Selecione os itens:  `View Results in Table`, `View Results in Tree` e `Summary Report`. Observe que todas as métricas da execução encontram-se neles, tais como as métricas individualizadas de cada execução, quantidade de amostras, % de erro de execução, tempos de cada requisição e métricas sumarizadas de tempos médio, mínimo, máximo e Throughput
+  * Selecione os itens:  `View Results in Table`, `View Results in Tree` e `Summary Report`. Observe que todas as métricas da execução encontram-se neles, tais como as métricas individualizadas de cada execução, quantidade de amostras, % de erro de execução, tempos de cada requisição e métricas sumarizadas de tempos médio, mínimo, máximo e usuários simultâneos
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
 

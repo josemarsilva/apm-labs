@@ -1,0 +1,35 @@
+[{
+    "id": 1,
+    "name": "Nerta McGarvie",
+    "address": "30140 Pleasure Hill Indonesia",
+    "email": "nmcgarvie0@ustream.tv",
+    "hired": "2018-05-18",
+    "dob": "1969-12-05",
+    "salary": "123456.78",
+    "bonus": 20,
+    "photo": "",
+    "department": 1
+}, {
+    "id": 2,
+    "name": "Yvette Muat",
+    "address": "406 cordelia Parkway China",
+    "email": "ymut1@underground.com",
+    "hired": "2018-04-23",
+    "dob": "1998-12-24",
+    "salary": "234567.89",
+    "bonus": 20,
+    "photo": "",
+    "department": 12
+}, {
+    "id": 3,
+    "name": "Eal Scotchorth",
+    "address": "27 Leoprich Parkway Philippines 4806",
+    "email": "escotchforth2@hostgator.com",
+    "hired": "2018-02-12",
+    "dob": "1992-11-07",
+    "salary": "345678.90",
+    "bonus": 7,
+    "photo": "",
+    "department": 9
+}
+]
