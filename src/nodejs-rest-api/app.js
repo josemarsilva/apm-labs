@@ -2,6 +2,7 @@ const http = require('http');
 const url = require('url');
 
 const data = require('./data')
+// /api/employees
 
 const server = http.createServer((req, res) => {
     const urlParts = url.parse(req.url);
