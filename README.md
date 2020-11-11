@@ -99,10 +99,10 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 
 ### 3.3. [Guia de Implantação, Configuração e Instalação](README-guia-implantacao-configuracao-instalacao.md)
 
-a. Instalando/Clonando este repositório no ambiente
-b. Instalando NodeJS (em Linux Ubuntu)
-c. Instalando Docker e Docker Composer (em Linux Ubuntu)
-d. Instalando JMeter
+* Instalando/Clonando este repositório no ambiente
+* Instalando NodeJS (em Linux Ubuntu)
+* Instalando Docker e Docker Composer (em Linux Ubuntu)
+* Instalando JMeter
 
 
 ### 3.4. Guia de Execução, Demonstração e Cenários de Teste
