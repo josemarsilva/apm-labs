@@ -110,6 +110,21 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 #### [3.4.1. Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer)](README-guia-exec-demo-teste-injetar-rebater-web-json-server-tools-benchmark.md)
 
 * **Objetivo**: O objetivo deste cenário de testes é avaliar as ferramentas na atividade de *Teste de Carga*
+* **Etapas**: Planejar, Executar, Checar e Agir
+* **Cenários**:
+  * 01 - Sanity Test / Browser / HTTP WEB
+  * 01.b - Sanity Test / Browser / JSON REST
+  * 02 - Load Test / Curl(windows) / HTTP WEB / 1 user
+  * 02.b - Load Test / Curl(windows) / HTTP WEB / 10 user
+  * 02.c - Load Test / Curl(windows) / JSON REST / 1 user
+  * 02.d - Load Test / Curl(windows) / JSON REST / 10 user
+  * 03 - Load Test / Postman / JSON REST
+  * 04 - Load Test / SoapUI / JSON REST
+  * 05 - Load Test / JMeter / HTTP WEB
+  * 05.b - Load Test / JMeter / HTTP WEB
+  * 05.c - Load Test / JMeter / JSON REST
+  * 05.d - Load Test / JMeter / JSON REST
+
 
 ### 3.5. Design Patterns, Standard, Conventions and Best Practices
 

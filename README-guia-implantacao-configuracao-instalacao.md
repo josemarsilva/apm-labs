@@ -1,8 +1,6 @@
 ## README-guia-implantacao-configuracao-instalacao.md
 
-[Guia de Implantação, Configuração e Instalação](./README.md#33-guia-de-implantação-configuração-e-instalação)
-
-### 3.3. Guia de Implantação, Configuração e Instalação
+### 3.3. [Guia de Implantação, Configuração e Instalação](./README.md#33-guia-de-implantação-configuração-e-instalação)
 
 #### a. Instalando/Clonando este repositório no ambiente
 
