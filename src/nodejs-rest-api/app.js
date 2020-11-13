@@ -16,8 +16,8 @@ function defaultRote(req,res) {
 
 function addEmployee(req,res) {
     let body = '';
-    res.on('data', chunk => body += chunk.toString());
-    res.on('end', () => {
+    req.on('data', chunk => body += chunk.toString());
+    req.on('end', () => {
         data.push(JSON.parse(body));
         res.statusCode = 201;
         return res.end(`${JSON.parse(body).name} added.`);

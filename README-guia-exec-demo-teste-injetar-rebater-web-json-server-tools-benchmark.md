@@ -42,13 +42,13 @@
 * **Monitoramento**: n/a
 * **Construção robôs de testes: injetar, rebater e monitorar**:
   * Os robôs de teste para _injetar_:
-    * *Curl* scripts ( `win-cmd-curl-script-webserver.bat`, `win-cmd-curl-script-json-rest-server.bat`, `win-cmd-curl-script-call-multiples-webserver.bat`, `win-cmd-curl-script-call-multiples-json-rest-server.bat` ) construído e disponível em `./src/curl-scripts`
+    * *Curl* scripts ( `win-cmd-curl-script-webserver.bat`, `win-cmd-curl-script-express-jsonserver.bat`, `win-cmd-curl-script-call-multiples-webserver.bat`, `win-cmd-curl-script-call-multiples-json-rest-server.bat` ) construído e disponível em `./src/curl-scripts`
     * *Postman* collection script construído e disponível em `https://www.getpostman.com/collections/1da862e11dc1c41dd8d9`
     * *SoapUI* project `apm-labs-soapui-project.xml` construído e disponível em `./src/soapui-projects`
     * *JMeter* scripts ( `jmeter-script-webserver-05.jmx`, `jmeter-script-webserver-05b.jmx`, `jmeter-script-jsonserver-05c.jmx` e `jmeter-script-jsonserver-05d.jmx` ) construído e disponível em `./src/jmeter-scripts`
   * Os robôs de teste para _rebater_:
     * `nodejs-webserver.js` construído e disponível em `./src/nodejs-webserver`
-    * `nodejs-jsonserver.bat` construído e disponível em `./src/nodejs-jsonserver`
+    * `nodejs-express-jsonserver.bat` construído e disponível em `./src/nodejs-express-jsonserver`
   * Os robôs de teste para _monitorar_:
     * n/a
 
@@ -84,15 +84,15 @@ nodejs-webserver> node nodejs-webserver.js
 
 * *Encerrar* o robô rebatedor `nodejs-webserver.js` iniciado com um ^C na tela do Windows Command onde ele está sendo executado
 
-* *Iniciar* o servidor JSON web local *nodejs-jsonserver*
+* *Iniciar* o servidor JSON web local *nodejs-express-jsonserver*
 
 ```cmd
-apm-labs> cd src/nodejs-jsonserver
+apm-labs> cd src/nodejs-express-jsonserver
 ```cmd
-apm-labs> cd src/nodejs-jsonserver
-nodejs-jsonserver> npm install json-server
-nodejs-jsonserver> echo nodejs-jsonserver.bat ou a linha de comando abaixo
-nodejs-jsonserver> json-server --watch db-users.json
+apm-labs> cd src/nodejs-express-jsonserver
+nodejs-express-jsonserver> npm install json-server
+nodejs-express-jsonserver> echo nodejs-express-jsonserver.bat ou a linha de comando abaixo
+nodejs-express-jsonserver> json-server --watch db-users.json
   \{^_^}/ hi!
   Loading db-users.json
   Done
@@ -153,15 +153,15 @@ nodejs-webserver> node nodejs-webserver.js
 
 * *Encerrar* o robô rebatedor `nodejs-webserver.js` iniciado com um ^C na tela do Windows Command onde ele está sendo executado
 
-* *Iniciar* o servidor JSON web local *nodejs-jsonserver*
+* *Iniciar* o servidor JSON web local *nodejs-express-jsonserver*
 
 ```cmd
-apm-labs> cd src/nodejs-jsonserver
+apm-labs> cd src/nodejs-express-jsonserver
 ```cmd
-apm-labs> cd src/nodejs-jsonserver
-nodejs-jsonserver> npm install json-server
-nodejs-jsonserver> echo nodejs-jsonserver.bat ou a linha de comando abaixo
-nodejs-jsonserver> json-server --watch db-users.json
+apm-labs> cd src/nodejs-express-jsonserver
+nodejs-express-jsonserver> npm install json-server
+nodejs-express-jsonserver> echo nodejs-express-jsonserver.bat ou a linha de comando abaixo
+nodejs-express-jsonserver> json-server --watch db-users.json
   \{^_^}/ hi!
   Loading db-users.json
   Done
@@ -174,31 +174,31 @@ nodejs-jsonserver> json-server --watch db-users.json
 ```
 
 * *Executar* um *Teste de Sanidade (Sanity Test)* do `Cenário-02.c`:
-  * Execute `win-cmd-curl-script-json-rest-server.bat`
+  * Execute `win-cmd-curl-script-express-jsonserver.bat`
   * Marque a data/hora inicial e final
   * Encontre a diferença de tempo entre data/hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
 * *Executar* os *Teste de Carga (Load Test)* com o `Cenário-02.d`:
   * Execute `win-cmd-curl-script-call-multiples-json-rest-server.bat`
-  * Obtenha a data/hora inicial e final em cada um dos arquivos (.log) de nomenclatura `win-cmd-curl-script-json-rest-server*.log`
+  * Obtenha a data/hora inicial e final em cada um dos arquivos (.log) de nomenclatura `win-cmd-curl-script-express-jsonserver*.log`
   * Encontre a diferença média entre a data/hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
-* *Encerrar* o robô rebatedor `nodejs-jsonserver` iniciado com um ^C na tela do Windows Command onde ele está sendo executado
+* *Encerrar* o robô rebatedor `nodejs-express-jsonserver` iniciado com um ^C na tela do Windows Command onde ele está sendo executado
 
 
 ###### Cenário-03
 
-* *Iniciar* o servidor JSON web local *nodejs-jsonserver*
+* *Iniciar* o servidor JSON web local *nodejs-express-jsonserver*
 
 ```cmd
-apm-labs> cd src/nodejs-jsonserver
+apm-labs> cd src/nodejs-express-jsonserver
 ```cmd
-apm-labs> cd src/nodejs-jsonserver
-nodejs-jsonserver> npm install json-server
-nodejs-jsonserver> echo nodejs-jsonserver ou a linha de comando abaixo
-nodejs-jsonserver> json-server --watch db-users.json
+apm-labs> cd src/nodejs-express-jsonserver
+nodejs-express-jsonserver> npm install json-server
+nodejs-express-jsonserver> echo nodejs-express-jsonserver ou a linha de comando abaixo
+nodejs-express-jsonserver> json-server --watch db-users.json
   \{^_^}/ hi!
   Loading db-users.json
   Done
@@ -223,15 +223,15 @@ nodejs-jsonserver> json-server --watch db-users.json
 
 ###### Cenário-04
 
-* *Iniciar* o servidor JSON web local *nodejs-jsonserver*
+* *Iniciar* o servidor JSON web local *nodejs-express-jsonserver*
 
 ```cmd
-apm-labs> cd src/nodejs-jsonserver
+apm-labs> cd src/nodejs-express-jsonserver
 ```cmd
-apm-labs> cd src/nodejs-jsonserver
-nodejs-jsonserver> npm install json-server
-nodejs-jsonserver> echo nodejs-jsonserver.bat ou a linha de comando abaixo
-nodejs-jsonserver> json-server --watch db-users.json
+apm-labs> cd src/nodejs-express-jsonserver
+nodejs-express-jsonserver> npm install json-server
+nodejs-express-jsonserver> echo nodejs-express-jsonserver.bat ou a linha de comando abaixo
+nodejs-express-jsonserver> json-server --watch db-users.json
   \{^_^}/ hi!
   Loading db-users.json
   Done
@@ -293,15 +293,15 @@ nodejs-webserver> node nodejs-webserver.js
 
 * *Encerrar* o robô rebatedor `nodejs-webserver` iniciado com um ^C na tela do Windows Command onde ele está sendo executado
 
-* *Iniciar* o servidor JSON web local *nodejs-jsonserver*
+* *Iniciar* o servidor JSON web local *nodejs-express-jsonserver*
 
 ```cmd
-apm-labs> cd src/nodejs-jsonserver
+apm-labs> cd src/nodejs-express-jsonserver
 ```cmd
-apm-labs> cd src/nodejs-jsonserver
-nodejs-jsonserver> npm install json-server
-nodejs-jsonserver> echo nodejs-jsonserver.bat ou a linha de comando abaixo
-nodejs-jsonserver> json-server --watch db-users.json
+apm-labs> cd src/nodejs-express-jsonserver
+nodejs-express-jsonserver> npm install json-server
+nodejs-express-jsonserver> echo nodejs-express-jsonserver.bat ou a linha de comando abaixo
+nodejs-express-jsonserver> json-server --watch db-users.json
   \{^_^}/ hi!
   Loading db-users.json
   Done
