@@ -2,7 +2,7 @@ ECHO OFF
 REM # #########################################################################
 SET SCRIPT_NAME=win-cmd-curl-script-call-multiples-json-rest-server.bat
 SET SCRIPT_DESCRIPTION=Robo de Teste para *injetar* em paralelo multiplas requisicoes REST Json
-SET PARAM_SCRIPT_CALLED=win-cmd-curl-script-json-rest-server.bat
+SET PARAM_SCRIPT_CALLED=win-cmd-curl-script-express-jsonserver.bat
 SET PARAM_QTY_THREADS=10
 REM Observacoes: n/a
 REM # #########################################################################
