@@ -3,7 +3,7 @@ $scriptName = "powershell-script-sanity-json-api-get-post.ps1"
 $scriptDescription = "PowerShell script to Sanity Test a Json API application with GET and POST" 
 $paramRestJsonUrl = "http://localhost:3000/api/employees"
 $paramQtyRequest = 1
-$paramJsonPostData = '{ "name": "Name ?", "salary": "?" }'
+$paramJsonPostData = '{ "id": ?, "name": "Name ?", "salary": ? }'
 # pre-requisites:
 #              * Setup Powershell Execution Policy Unrestricted
 #                - https://pt.stackoverflow.com/questions/220078/o-que-significa-o-erro-execu%C3%A7%C3%A3o-de-scripts-foi-desabilitada-neste-sistema

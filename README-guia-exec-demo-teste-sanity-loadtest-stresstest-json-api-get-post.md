@@ -30,8 +30,9 @@
 
 ```json
 {
+    "id":  1,
     "name":  "Name 1",
-    "salary":  "1"
+    "salary":  1
 }
 ```
 
