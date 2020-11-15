@@ -83,6 +83,7 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 * SOAP UI (apenas para sanidade e comparativo)
 * Postman (apenas para sanidade e comparativo)
 * Curl(Window e Linux - apenas para sanidade e comparativo)
+* Powershell(Windows) (apenas para sanidade e comparativo)
 * VirtualBox (ou ambiente linux disponível)
 
 
