@@ -111,7 +111,6 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 #### [3.4.1. Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer) vs ferramentas](README-guia-exec-demo-teste-injetar-rebater-web-json-server-tools-benchmark.md)
 
 * **Objetivo**: O objetivo deste cenário de testes é avaliar as ferramentas na atividade de *Teste de Carga*
-* **Etapas**: Planejar, Executar, Checar e Agir
 * **Cenários**:
   * 01 - Sanity Test / Browser / HTTP WEB
   * 01.b - Sanity Test / Browser / JSON REST
@@ -125,6 +124,17 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * 05.b - Load Test / JMeter / HTTP WEB
   * 05.c - Load Test / JMeter / JSON REST
   * 05.d - Load Test / JMeter / JSON REST
+
+
+#### [3.4.2. Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST](README-guia-exec-demo-teste-sanity-loadtest-stresstest-json-api-get-post.md)
+
+* **Objetivo**: O objetivo deste cenário de testes é avaliar se uma <ins>API</ins> construída em <ins>NodeJS</ins> com um cadastro simples consegue suportar uma carga de 100 usuários simultâneos fazendo requisições de GET e POST. Para completar, desejamos estressar aplicação até saber qual o limite de usuários simultâneos.
+* **Ciclos e Cenários**: Executar um único ciclo para cada cenário com cada uma das ferramentas
+
+| Cenário | Detalhamento |
+| :------ | :---         |
+| **01**  | *Teste de Sanidade (Sanity Test)* da aplicação com scripts `Curl(windows)`, acessando REST API, somente GET, somente 100 _requests_ e no _Design Patterns: Synchronous Request / Response_ |
+| **02**  | *Teste de Sanidade (Sanity Test)* da aplicação com scripts `Powershell(windows)`, acessando REST API, com variações: GET/POST, com variações de Quantidades (conforme detalhamento do item) e no _Design Patterns: Synchronous Request / Response_ |
 
 
 ### 3.5. Design Patterns, Standard, Conventions and Best Practices

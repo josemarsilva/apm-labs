@@ -4,11 +4,11 @@
 
 [### 3.4. Guia de Execução, Demonstração e Cenários de Teste](./README.md#34-guia-de-execução-demonstração-e-cenários-de-teste)
 
-#### 3.4.2. Performance Test - Teste de Carga e de Performance com Json API's GET e POST
+#### 3.4.2. Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST
 
 ##### Planejar
 
-* **Objetivo**: O objetivo deste cenário de testes é avaliar se uma <ins>API</ins> construída em <ins>NodeJS</ins> com um cadastro simples consegue suportar uma carga de 100 usuários simultâneos fazendo requisições de GET e POST. Para completar, desejamos saber qual o limite de usuários simultâneos.
+* **Objetivo**: O objetivo deste cenário de testes é avaliar se uma <ins>API</ins> construída em <ins>NodeJS</ins> com um cadastro simples consegue suportar uma carga de 100 usuários simultâneos fazendo requisições de GET e POST. Para completar, desejamos estressar aplicação até saber qual o limite de usuários simultâneos.
 * **Tipo de Testes**: *Teste de Carga (Load Test)* e *Teste de Estresse (Stress Test)*
 * **Ciclos e Cenários**: Executar um único ciclo para cada cenário com cada uma das ferramentas
 
