@@ -190,6 +190,7 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * [NodeJs Json Server](https://www.npmjs.com/package/json-server)
   * [NodeJS Mastering REST API's](https://www.udemy.com/course/mastering-rest-apis-in-nodejs-zero-to-hero/)
 * JMeter
+  * [JMeter - User Manual, Getting Started, Best Practices](https://jmeter.apache.org/usermanual/)
   * [JMeter - Testes de Carga](http://shipit.resultadosdigitais.com.br/blog/testes-de-carga-com-jmeter/)
   * [JMeter - Teste de Performance](https://www.devmedia.com.br/teste-de-performance-com-jmeter/34621)
 * Testes de Performance

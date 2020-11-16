@@ -111,9 +111,9 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
 ##### Checar e Agir
 
 * *Aferir* as métricas anotadas em cada um dos testes de cada um dos testes
-* *Compilar* relatório com as métricas aferidas
-* *Elaborar* relatório
-* *Apresentar* relatório
+* *Identificar* gargalos e _Quick Wins_
+* *Compilar* relatório de recomendações com as métricas aferidas, incidentes e eventos, oportunidades e necessidades de melhorias, _Quick Wins_, comparativos, considerações, etc
+* *Elaborar* e *Apresentar* relatório de recomendações
 
 * Relatório Comparativo de Métricas de Cenários
 
