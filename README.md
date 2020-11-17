@@ -128,7 +128,7 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 
 #### [3.4.2. Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST](README-guia-exec-demo-teste-sanity-loadtest-stresstest-json-api-get-post.md)
 
-* **Objetivo**: O objetivo deste cenário de testes é avaliar se uma <ins>API</ins> construída em <ins>NodeJS</ins> com um cadastro simples consegue suportar uma carga de 100 usuários simultâneos fazendo requisições de GET e POST. Para completar, desejamos estressar aplicação até saber qual o limite de usuários simultâneos.
+* **Objetivo**: O objetivo deste cenário de testes é avaliar se uma <ins>API</ins> construída em <ins>NodeJS</ins> com um cadastro simples consegue suportar uma carga de 10 a 100 usuários simultâneos fazendo requisições de GET e POST. Para completar, desejamos estressar aplicação até saber qual o limite de usuários simultâneos.
 * **Ciclos e Cenários**: Executar um único ciclo para cada cenário com cada uma das ferramentas
 
 | Cenário | Detalhamento |
@@ -154,6 +154,11 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 #### Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
 
 ![SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png)
+
+#### Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Pool
+
+![SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayPool.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayPool.png)
+
 
 #### Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
 

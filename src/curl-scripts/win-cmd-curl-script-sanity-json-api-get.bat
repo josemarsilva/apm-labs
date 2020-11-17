@@ -41,7 +41,7 @@ SET END_TIME=%TIME%
 ECHO End Date/Time: %END_DATE% %END_TIME%
 ECHO.
 ECHO Elapsed Date/Time and TPS (Transactions per seconds):
-ECHO     ( %END_DATE% %END_TIME% - %BEGIN_DATE% %BEGIN_TIME% ) / %PARAM_QTY_REQUEST%
+ECHO     %PARAM_QTY_REQUEST% / ( %END_DATE% %END_TIME% - %BEGIN_DATE% %BEGIN_TIME% )
 ECHO.
 
 REM # #########################################################################
