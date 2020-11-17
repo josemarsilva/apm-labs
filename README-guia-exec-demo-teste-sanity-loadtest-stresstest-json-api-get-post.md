@@ -144,7 +144,7 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * Execute o(s) _injetor_ REST GET/POST Request `jmeter-script-sanity-loadtest-stresstest-json-api-get-post.jmx` disponível(eis) em `src\powershell-scripts` com a seguinte configuração de `Thread Group`
     * Number of Threads(users): `1`
     * Loop Count: `100`
-  * Obtenha as métricas de Elapsed start/finish time e TPS
+  * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
 * *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
@@ -161,7 +161,7 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * Execute o(s) _injetor_ REST GET/POST Request `jmeter-script-sanity-loadtest-stresstest-json-api-get-post.jmx` disponível(eis) em `src\powershell-scripts` com a seguinte configuração de `Thread Group`
     * Number of Threads(users): `1`
     * Loop Count: `1000`
-  * Obtenha as métricas de Elapsed start/finish time e TPS
+  * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
 * *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
@@ -178,7 +178,7 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * Execute o(s) _injetor_ REST GET/POST Request `jmeter-script-sanity-loadtest-stresstest-json-api-get-post.jmx` disponível(eis) em `src\powershell-scripts` com a seguinte configuração de `Thread Group`
     * Number of Threads(users): `10`
     * Loop Count: `100`
-  * Obtenha as métricas de Elapsed start/finish time e TPS
+  * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
 * *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
@@ -195,7 +195,7 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * Execute o(s) _injetor_ REST GET/POST Request `jmeter-script-sanity-loadtest-stresstest-json-api-get-post.jmx` disponível(eis) em `src\powershell-scripts` com a seguinte configuração de `Thread Group`
     * Number of Threads(users): `10`
     * Loop Count: `1000`
-  * Obtenha as métricas de Elapsed start/finish time e TPS
+  * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
 * *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
@@ -212,7 +212,7 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * Execute o(s) _injetor_ REST GET/POST Request `jmeter-script-sanity-loadtest-stresstest-json-api-get-post.jmx` disponível(eis) em `src\powershell-scripts` com a seguinte configuração de `Thread Group`
     * Number of Threads(users): `100`
     * Loop Count: `100`
-  * Obtenha as métricas de Elapsed start/finish time e TPS
+  * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
 * *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
@@ -229,7 +229,7 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * Execute o(s) _injetor_ REST GET/POST Request `jmeter-script-sanity-loadtest-stresstest-json-api-get-post.jmx` disponível(eis) em `src\powershell-scripts` com a seguinte configuração de `Thread Group`
     * Number of Threads(users): `100`
     * Loop Count: `1000`
-  * Obtenha as métricas de Elapsed start/finish time e TPS
+  * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
 
 ##### Checar e Agir
@@ -243,16 +243,16 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
 
 | Cenário | Métricas     | Observações  |
 | :------ | :---         | :---         |
-| 01 - _Sanity Test_ / `Curl(windows)` / REST API GET / 1 user e 1000 _requests_ / `Synchronous Request / Response`|  Elapsed: 62,44 s, TPS: 16,01537 | |
-| 02 - _Sanity Test_ / `Powershell(windows)` / REST API GET/POST / 1 user, 1 _requests_ / `Synchronous Request / Response`|  Elapsed: 0 s, TPS: n/a | |
-| 02.b - _Load Test_ / `Powershell(windows)` / REST API GET/POST / 1 user, 100 _requests_ / `Synchronous Request / Response`|  Elapsed: 2 s, TPS: 50 | |
-| 02.c - _Load Test_ / `Powershell(windows)` / REST API GET/POST / 1 user, 1000 _requests_ / `Synchronous Request / Response`|  Elapsed: 99 s, TPS: 11.23595 | |
-| 03 - _Load Test_ / `JMeter` / REST API GET/POST / 1 user, 100 _requests_ / `Synchronous Request / Response`|  Elapsed: 0,397 s, TPS: 251,889 | |
-| 03.b - _Load Test_ / `JMeter` / REST API GET/POST / 1 user, 1000 _requests_ / `Synchronous Request / Response`|  Elapsed: 3,534 s, TPS: 282,965 | |
-| 03.c - _Load Test_ / `JMeter` / REST API GET/POST / 10 user, 100 _requests_ / `Synchronous Request / Response`|  Elapsed: 3,046 s, TPS: 328,299 | |
-| 03.d - _Load Test_ / `JMeter` / REST API GET/POST / 10 user, 1000 _requests_ / `Synchronous Request / Response`|  Elapsed: 51,573 s, TPS: 193,900 | |
-| 03.e - _Load Test_ / `JMeter` / REST API GET/POST / 100 user, 100 _requests_ / `Synchronous Request / Response`|  Elapsed: 53,553 s, TPS: 186,731 | |
-| 03.f - _Load Test_ / `JMeter` / REST API GET/POST / 100 user, 1000 _requests_ / `Synchronous Request / Response`|  Elapsed: ? s, TPS: ? | |
+| 01 - _Sanity Test_ / `Curl(windows)` / REST API GET / 1 user e 1000 _requests_ / `Synchronous Request / Response` |  Elapsed: 62,44 s, TPS: 16,01537 | |
+| 02 - _Sanity Test_ / `Powershell(windows)` / REST API GET/POST / 1 user, 1 _requests_ / `Synchronous Request / Response` |  Elapsed: 0 s, TPS: n/a | |
+| 02.b - _Load Test_ / `Powershell(windows)` / REST API GET/POST / 1 user, 100 _requests_ / `Synchronous Request / Response` |  Elapsed: 2 s, TPS: 50 | |
+| 02.c - _Load Test_ / `Powershell(windows)` / REST API GET/POST / 1 user, 1000 _requests_ / `Synchronous Request / Response` |  Elapsed: 99 s, TPS: 11.23595 | |
+| 03 - _Load Test_ / `JMeter` / REST API GET/POST / 1 user, 100 _requests_ / `Synchronous Request / Response` |  Elapsed: 0,397 s, TPS: 251,889 | |
+| 03.b - _Load Test_ / `JMeter` / REST API GET/POST / 1 user, 1000 _requests_ / `Synchronous Request / Response` |  Elapsed: 3,534 s, TPS: 282,965 | |
+| 03.c - _Load Test_ / `JMeter` / REST API GET/POST / 10 user, 100 _requests_ / `Synchronous Request / Response` |  Elapsed: 3,046 s, TPS: 328,299 | |
+| 03.d - _Load Test_ / `JMeter` / REST API GET/POST / 10 user, 1000 _requests_ / `Synchronous Request / Response` |  Elapsed: 51,573 s, TPS: 193,900 | |
+| 03.e - _Load Test_ / `JMeter` / REST API GET/POST / 100 user, 100 _requests_ / `Synchronous Request / Response` |  Elapsed: 53,553 s, TPS: 186,731 | |
+| 03.f - _Load Test_ / `JMeter` / REST API GET/POST / 100 user, 1000 _requests_ / `Synchronous Request / Response` |  Elapsed: ? s, TPS: ? | |
 
 
 * Relatório Considerações Finais

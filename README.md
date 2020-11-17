@@ -90,6 +90,7 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 #### b. Ferramental de apoio
 
 * Ferramenta: [Draw.IO](https://app.diagrams.net/) (_apoio_: necessário para editar os diagramas UML)
+* Ferramenta: Planilha Excel `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens de gráficos de planos e resultados.
 
 
 ### 3.2. Guia do Desenvolvedor e Administrador
@@ -129,12 +130,17 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 #### [3.4.2. Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST](README-guia-exec-demo-teste-sanity-loadtest-stresstest-json-api-get-post.md)
 
 * **Objetivo**: O objetivo deste cenário de testes é avaliar se uma <ins>API</ins> construída em <ins>NodeJS</ins> com um cadastro simples consegue suportar uma carga de 10 a 100 usuários simultâneos fazendo requisições de GET e POST. Para completar, desejamos estressar aplicação até saber qual o limite de usuários simultâneos.
-* **Ciclos e Cenários**: Executar um único ciclo para cada cenário com cada uma das ferramentas
-
-| Cenário | Detalhamento |
-| :------ | :---         |
-| **01**  | *Teste de Sanidade (Sanity Test)* da aplicação com scripts `Curl(windows)`, acessando REST API, somente GET, somente 100 _requests_ e no _Design Patterns: Synchronous Request / Response_ |
-| **02**  | *Teste de Sanidade (Sanity Test)* da aplicação com scripts `Powershell(windows)`, acessando REST API, com variações: GET/POST, com variações de Quantidades (conforme detalhamento do item) e no _Design Patterns: Synchronous Request / Response_ |
+* **Cenários**:
+  * 01 - Sanity Test / Curl(windows) / REST API GET / 1 user e 1000 requests / Synchronous Request / Response
+  * 02 - Sanity Test / Powershell(windows) / REST API GET/POST / 1 user, 1 requests / Synchronous Request / Response
+  * 02.b - Load Test / Powershell(windows) / REST API GET/POST / 1 user, 100 requests / Synchronous Request / Response
+  * 02.c - Load Test / Powershell(windows) / REST API GET/POST / 1 user, 1000 requests / Synchronous Request / Response
+  * 03 - Load Test / JMeter / REST API GET/POST / 1 user, 100 requests / Synchronous Request / Response
+  * 03.b - Load Test / JMeter / REST API GET/POST / 1 user, 1000 requests / Synchronous Request / Response
+  * 03.c - Load Test / JMeter / REST API GET/POST / 10 user, 100 requests / Synchronous Request / Response
+  * 03.d - Load Test / JMeter / REST API GET/POST / 10 user, 1000 requests / Synchronous Request / Response
+  * 03.e - Load Test / JMeter / REST API GET/POST / 100 user, 100 requests / Synchronous Request / Response
+  * 03.f - Load Test / JMeter / REST API GET/POST / 100 user, 1000 requests / Synchronous Request / Response
 
 
 ### 3.5. Design Patterns, Standard, Conventions and Best Practices
