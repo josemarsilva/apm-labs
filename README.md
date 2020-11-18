@@ -198,8 +198,10 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * [Overview of Blocking vs Non-Blocking](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/)
   * [NodeJS Primeiros Passos: Servidor HTTP Básico](https://www.youtube.com/watch?v=5L5-EoJbMfY)
   * [NodeJS Assíncrono: Entenda de vez Callbacks, Promises e Async/Await](https://www.youtube.com/watch?v=7Bs4-rqbCQc)
-  * [NodeJs Json Server](https://www.npmjs.com/package/json-server)
+  * [NodeJS Json Server](https://www.npmjs.com/package/json-server)
   * [NodeJS Mastering REST API's](https://www.udemy.com/course/mastering-rest-apis-in-nodejs-zero-to-hero/)
+  * [NodeJS Building a simple REST API with Express](https://medium.com/@onejohi/building-a-simple-rest-api-with-nodejs-and-express-da6273ed7ca9)
+  * [NodeJS API + HTTP + REST Exemplo](https://imasters.com.br/back-end/api-http-rest-conceito-e-exemplo-em-node-js)
 * JMeter
   * [JMeter - User Manual, Getting Started, Best Practices](https://jmeter.apache.org/usermanual/)
   * [JMeter - Testes de Carga](http://shipit.resultadosdigitais.com.br/blog/testes-de-carga-com-jmeter/)
