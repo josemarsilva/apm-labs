@@ -19,6 +19,7 @@ O projeto **apm-labs** consiste em explorar cenários de testes **_Performance T
     * [Guia do Desenvolvedor e Administrador](#32-guia-do-desenvolvedor-e-administrador)
     * [Guia de Implantação, Configuração e Instalação](#32-guia-do-desenvolvedor-e-administrador)
       * [Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer) vs Ferramentas](#341-performance-test---injetar-browser-curl-postman-soapui-e-jmeter-vs-rebater-http-e-json-webserver-vs-ferramentas)
+      * [Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST](#342-performance-test---teste-de-sanidade-carga-e-estresse-com-json-apis-get-e-post)
     * [Guia de Execução, Demonstração e Cenários de Teste](#34-guia-de-execução-demonstração-e-cenários-de-teste)
     * [Design Patterns, Standard, Conventions and Best Practices](#35-design-patterns-standard-conventions-and-best-practices)
   * [I - Referências](#i---referências)
@@ -208,6 +209,9 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * [JMeter - Teste de Performance](https://www.devmedia.com.br/teste-de-performance-com-jmeter/34621)
 * Testes de Performance
   * [Introdução a Teste de Performance de Software](https://www.softwaretestinghelp.com/introduction-to-performance-testing-loadrunner-training-tutorial-part-1/)
+* ISO8583
+  * [ISO 8583 Complete Guide English](https://www.amazon.com.br/ISO-8583-Complete-Guide-English-ebook/dp/B085C18P9K)
+  * [Roehrs, Alex. Mestrado Acadêmico - Computação Aplicada - 4iPay: Modelo para Sistemas de Pagamento Móvel em Comércio Ubíquo](http://www.repositorio.jesuita.org.br/bitstream/handle/UNISINOS/3140/4iPay.pdf) - páginas: 69 e 70
 * Github README.md writing sintax
   * [Basic Github Markdown Writing Format](https://docs.github.com/pt/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax)  
   * [Github Markdown Chead Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
