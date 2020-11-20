@@ -18,9 +18,9 @@ O projeto **apm-labs** consiste em explorar cenários de testes **_Performance T
     * [Pré-Requisitos, Pré-Condições e Premissas](#31-pré-requisitos-pré-condições-e-premissas)
     * [Guia do Desenvolvedor e Administrador](#32-guia-do-desenvolvedor-e-administrador)
     * [Guia de Implantação, Configuração e Instalação](#32-guia-do-desenvolvedor-e-administrador)
+    * [Guia de Execução, Demonstração e Cenários de Teste](#34-guia-de-execução-demonstração-e-cenários-de-teste)
       * [Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer) vs Ferramentas](#341-performance-test---injetar-browser-curl-postman-soapui-e-jmeter-vs-rebater-http-e-json-webserver-vs-ferramentas)
       * [Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST](#342-performance-test---teste-de-sanidade-carga-e-estresse-com-json-apis-get-e-post)
-    * [Guia de Execução, Demonstração e Cenários de Teste](#34-guia-de-execução-demonstração-e-cenários-de-teste)
     * [Design Patterns, Standard, Conventions and Best Practices](#35-design-patterns-standard-conventions-and-best-practices)
   * [I - Referências](#i---referências)
 
