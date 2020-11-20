@@ -59,7 +59,7 @@
     * *JMeter* scripts:
       * ( `jmeter-script-` ) construídos e disponíveis em `./src/jmeter-scripts`
   * Os robôs de teste para _rebater_:
-    * ( `app-nodejs-rest-api-get-post.js`) construídos e disponíveis em `./src/nodejs-rest-api`
+    * ( `nodejs-rest-api-get-post.js`) construídos e disponíveis em `./src/nodejs-rest-api`
   * Os robôs de teste para _monitorar_:
     * n/a
 
@@ -69,11 +69,11 @@
 
 ###### Cenário-01
 
-* *Iniciar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
+* *Iniciar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
 
 ```cmd
 apm-labs> cd src/nodejs-rest-api
-nodejs-webserver> node app-nodejs-rest-api-get-post.js
+nodejs-webserver> node nodejs-rest-api-get-post.js
 ```
 
 * *Executar* os *Teste de Sanidade (Sanit Test)* do `Cenário-01`:
@@ -81,15 +81,15 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * Obtenha e encontre a diferença de tempo entre data/hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
-* *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
+* *Encerrar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
 ###### Cenário-02
 
-* *Iniciar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
+* *Iniciar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
 
 ```cmd
 apm-labs> cd src/nodejs-rest-api
-nodejs-webserver> node app-nodejs-rest-api-get-post.js
+nodejs-webserver> node nodejs-rest-api-get-post.js
 ```
 
 * *Executar* um *Teste de Carga (Load Test)* do `Cenário-02`:
@@ -97,15 +97,15 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * Obtenha e encontre a diferença de tempo entre data/hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
-* *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
+* *Encerrar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
 ###### Cenário-02.b
 
-* *Iniciar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
+* *Iniciar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
 
 ```cmd
 apm-labs> cd src/nodejs-rest-api
-nodejs-webserver> node app-nodejs-rest-api-get-post.js
+nodejs-webserver> node nodejs-rest-api-get-post.js
 ```
 
 * *Executar* um *Teste de Carga (Load Test)* do `Cenário-02.b`:
@@ -113,15 +113,15 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * Obtenha e encontre a diferença de tempo entre data/hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
-* *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
+* *Encerrar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
 ###### Cenário-02.c
 
-* *Iniciar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
+* *Iniciar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
 
 ```cmd
 apm-labs> cd src/nodejs-rest-api
-nodejs-webserver> node app-nodejs-rest-api-get-post.js
+nodejs-webserver> node nodejs-rest-api-get-post.js
 ```
 
 * *Executar* um *Teste de Carga (Load Test)* do `Cenário-02.c`:
@@ -129,15 +129,15 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * Obtenha e encontre a diferença de tempo entre data/hora final e inicial em segundos e divida pela quantidade
   * Pronto! Você encontrou a *métrica* de *TPS - Transações por Segundos* deste cenário
 
-* *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
+* *Encerrar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
 ###### Cenário-03
 
-* *Iniciar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
+* *Iniciar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
 
 ```cmd
 apm-labs> cd src/nodejs-rest-api
-nodejs-webserver> node app-nodejs-rest-api-get-post.js
+nodejs-webserver> node nodejs-rest-api-get-post.js
 ```
 
 * *Executar* um *Teste de Carga (Load Test)* do `Cenário-03`:
@@ -146,15 +146,15 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
     * Loop Count: `100`
   * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
-* *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
+* *Encerrar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
 ###### Cenário-03.b
 
-* *Iniciar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
+* *Iniciar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
 
 ```cmd
 apm-labs> cd src/nodejs-rest-api
-nodejs-webserver> node app-nodejs-rest-api-get-post.js
+nodejs-webserver> node nodejs-rest-api-get-post.js
 ```
 
 * *Executar* um *Teste de Carga (Load Test)* do `Cenário-03.b`:
@@ -163,15 +163,15 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
     * Loop Count: `1000`
   * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
-* *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
+* *Encerrar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
 ###### Cenário-03.c
 
-* *Iniciar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
+* *Iniciar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
 
 ```cmd
 apm-labs> cd src/nodejs-rest-api
-nodejs-webserver> node app-nodejs-rest-api-get-post.js
+nodejs-webserver> node nodejs-rest-api-get-post.js
 ```
 
 * *Executar* um *Teste de Carga (Load Test)* do `Cenário-03.c`:
@@ -180,15 +180,15 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
     * Loop Count: `100`
   * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
-* *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
+* *Encerrar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
 ###### Cenário-03.d
 
-* *Iniciar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
+* *Iniciar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
 
 ```cmd
 apm-labs> cd src/nodejs-rest-api
-nodejs-webserver> node app-nodejs-rest-api-get-post.js
+nodejs-webserver> node nodejs-rest-api-get-post.js
 ```
 
 * *Executar* um *Teste de Carga (Load Test)* do `Cenário-03.d`:
@@ -197,15 +197,15 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
     * Loop Count: `1000`
   * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
-* *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
+* *Encerrar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
 ###### Cenário-03.e
 
-* *Iniciar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
+* *Iniciar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
 
 ```cmd
 apm-labs> cd src/nodejs-rest-api
-nodejs-webserver> node app-nodejs-rest-api-get-post.js
+nodejs-webserver> node nodejs-rest-api-get-post.js
 ```
 
 * *Executar* um *Teste de Carga (Load Test)* do `Cenário-03.e`:
@@ -214,15 +214,15 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
     * Loop Count: `100`
   * Utilize a planilha `jmeter-script-plans-and-results-beautifier.xlsx` para compilar as métricas de _elapsed time_ e _tps_ e gerar imagens padronizadas de gráficos de planos e resultados.
 
-* *Encerrar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
+* *Encerrar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js`. Use ^C na tela do Windows Command onde ele está sendo executado
 
 ###### Cenário-03.f
 
-* *Iniciar* o(s) _rebatedor_ servidor REST API `app-nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
+* *Iniciar* o(s) _rebatedor_ servidor REST API `nodejs-rest-api-get-post.js` disponível(eis) em `src\nodejs-rest-api`
 
 ```cmd
 apm-labs> cd src/nodejs-rest-api
-nodejs-webserver> node app-nodejs-rest-api-get-post.js
+nodejs-webserver> node nodejs-rest-api-get-post.js
 ```
 
 * *Executar* um *Teste de Carga (Load Test)* do `Cenário-03.f`:
@@ -260,5 +260,5 @@ nodejs-webserver> node app-nodejs-rest-api-get-post.js
   * As condições gerais de inteferências do equipamento com processos externos foram minimizadas
   * Foram executadas 1 (um) ciclo(s) de repetição dos cenários, o critério de eleição para métrica do relatório foi a última métrica disponível
   * Todas as etapas do projeto ocorreram em condições normais, permitindo um planejamento de tempo adequado e um entendimento da infraestrutura, arquitetura e fluxo do negócio
-  * Cabe esclarecer que o robô _rebatedor_ `app-nodejs-rest-api-get-post.js` tem como característica acumular em sua base de dados JSON as requisições POST e o(s) os robô(s) _injetor_ `powershell-script-sanity-json-api-get-post.ps1` e `jmeter-script-sanity-loadtest-stresstest-json-api-get-post.jmx` tem como característica consultar toda a base após cada transação. Logo, haverá uma degradação de performance crescente entre as primeiras transações até as últimas transações
+  * Cabe esclarecer que o robô _rebatedor_ `nodejs-rest-api-get-post.js` tem como característica acumular em sua base de dados JSON as requisições POST e o(s) os robô(s) _injetor_ `powershell-script-sanity-json-api-get-post.ps1` e `jmeter-script-sanity-loadtest-stresstest-json-api-get-post.jmx` tem como característica consultar toda a base após cada transação. Logo, haverá uma degradação de performance crescente entre as primeiras transações até as últimas transações
   * É possível concluir que ...
