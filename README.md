@@ -203,6 +203,9 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * [NodeJS Mastering REST API's](https://www.udemy.com/course/mastering-rest-apis-in-nodejs-zero-to-hero/)
   * [NodeJS Building a simple REST API with Express](https://medium.com/@onejohi/building-a-simple-rest-api-with-nodejs-and-express-da6273ed7ca9)
   * [NodeJS API + HTTP + REST Exemplo](https://imasters.com.br/back-end/api-http-rest-conceito-e-exemplo-em-node-js)
+  * [NodeJS pacote ISO8583](https://www.npmjs.com/package/iso-8583)
+  * [NodeJS command line parser](https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/#:~:text=In%20Node.,for%20'argument%20values').&text=There%20you%20have%20it%20%2D%20an,the%20path%20to%20your%20script.)
+  * [Nodejs basic declaration](https://www.codegrepper.com/code-examples/delphi/how+to+declare+an+integer+value+in+js)
 * JMeter
   * [JMeter - User Manual, Getting Started, Best Practices](https://jmeter.apache.org/usermanual/)
   * [JMeter - Testes de Carga](http://shipit.resultadosdigitais.com.br/blog/testes-de-carga-com-jmeter/)
