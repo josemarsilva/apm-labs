@@ -63,7 +63,7 @@
   * Os robôs de teste para _monitorar_:
     * n/a
 
-* **Itens de análise, check-list e relatórios**: Quadro comparativo das características de cada ferramenta, facilidades, dificuldades, etc
+* **Itens de análise, check-list e relatórios**: Comparativo de Métricas de Cenários e Considerações Finais
 
 ##### Executar
 

@@ -143,6 +143,12 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * 03.e - Load Test / JMeter / REST API GET/POST / 100 user, 100 requests - Synchronous Request / Response
   * 03.f - Load Test / JMeter / REST API GET/POST / 100 user, 1000 requests - Synchronous Request / Response
 
+#### [3.4.3. Performance Test - Teste de Sanidade e Carga com robôs injetor e rebatedor ISO8583](README-guia-exec-demo-teste-sanity-loadtest-robo-injetor-rebatedor-iso8583.md)
+
+* **Objetivo**: O objetivo deste cenário de testes é avaliar se um <ins>robô rebatedor ISO8583</ins> construída em <ins>NodeJS</ins> consegue suportar uma carga de 10 a 100 usuários simultâneos realizando 10 mil requisições ISO8583 em menos de 1 minuto. 
+* **Cenários**:
+  * 01 - Sanity Test / NodeJS ISO8583 Robots: Launcher vs Hitter / Injetor vs Rebatedor / 1 user, 100 requests - Synchronous Request / Response
+
 
 ### 3.5. Design Patterns, Standard, Conventions and Best Practices
 
@@ -197,6 +203,7 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * [Construindo um Servidor Web com NodeJS](https://www.devmedia.com.br/construindo-um-servidor-web-com-node-js/32023)
   * [Construindo um Servidor Json com NodeJS](https://egghead.io/lessons/javascript-creating-demo-apis-with-json-server)
   * [Overview of Blocking vs Non-Blocking](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/)
+  * [Nodejs basic declaration](https://www.codegrepper.com/code-examples/delphi/how+to+declare+an+integer+value+in+js)
   * [NodeJS Primeiros Passos: Servidor HTTP Básico](https://www.youtube.com/watch?v=5L5-EoJbMfY)
   * [NodeJS Assíncrono: Entenda de vez Callbacks, Promises e Async/Await](https://www.youtube.com/watch?v=7Bs4-rqbCQc)
   * [NodeJS Json Server](https://www.npmjs.com/package/json-server)
@@ -205,7 +212,10 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * [NodeJS API + HTTP + REST Exemplo](https://imasters.com.br/back-end/api-http-rest-conceito-e-exemplo-em-node-js)
   * [NodeJS command line parser](https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/#:~:text=In%20Node.,for%20'argument%20values')
   * [NodeJS pacote ISO8583](https://www.npmjs.com/package/iso-8583)
-  * [Nodejs basic declaration](https://www.codegrepper.com/code-examples/delphi/how+to+declare+an+integer+value+in+js)
+  * [NodeJS Net Documentation](https://nodejs.org/api/net.html)
+  * [NodeJS Net Tutorial Basico](https://riptutorial.com/node-js/example/22406/a-simple-tcp-client)
+  * [NodeJS TCP Simple Client/Server](https://gist.github.com/sid24rane/2b10b8f4b2f814bd0851d861d3515a10)
+  * [NodeJS TCP Simple Client/Server (2)](https://gist.github.com/tedmiston/5935757)
 * JMeter
   * [JMeter - User Manual, Getting Started, Best Practices](https://jmeter.apache.org/usermanual/)
   * [JMeter - Testes de Carga](http://shipit.resultadosdigitais.com.br/blog/testes-de-carga-com-jmeter/)
