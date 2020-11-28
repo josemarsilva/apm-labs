@@ -1,0 +1,11 @@
+{
+  "name": "nodejs-iso8583-launcher",
+  "version": "1.0.0",
+  "description": "NodeJS ISO8583 Launcher",
+  "main": "nodejs-iso8583-launcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josemar Furegatti de Abreu Silva",
+  "license": "ISC"
+}
