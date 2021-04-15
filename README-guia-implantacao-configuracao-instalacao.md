@@ -48,3 +48,9 @@ $ tar -xvf apache-jmeter-5.3.tgz
 $ sudo chown -R $USER:$USER /opt/apache-jmeter-5.3
 $ rm apache-jmeter-5.3.tgz
 ```
+
+#### e. Instalando Oracle em Linux (Oracle Linux 7)
+
+* https://medium.com/@anuketjain007/how-to-install-oracle-database-12c-release-2-in-linux-7-35923db49487
+
+

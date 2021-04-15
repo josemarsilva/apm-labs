@@ -22,6 +22,12 @@ O projeto **apm-labs** consiste em explorar cenários de testes **_Performance T
       * [Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer) vs Ferramentas](#341-performance-test---injetar-browser-curl-postman-soapui-e-jmeter-vs-rebater-http-e-json-webserver-vs-ferramentas)
       * [Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST](#342-performance-test---teste-de-sanidade-carga-e-estresse-com-json-apis-get-e-post)
     * [Design Patterns, Standard, Conventions and Best Practices](#35-design-patterns-standard-conventions-and-best-practices)
+      * Diagrama de Sequencia - Synchronous Request / Response
+      * Diagrama de Sequencia - Synchronous Request / Acknowledge
+      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
+      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
+      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Pool
+      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
   * [I - Referências](#i---referências)
 
 
@@ -150,32 +156,14 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * 01 - Sanity Test / NodeJS ISO8583 Robots: Launcher vs Hitter / Injetor vs Rebatedor / 1 user, 100 requests - Synchronous Request / Response
 
 
-### 3.5. Design Patterns, Standard, Conventions and Best Practices
+### [3.5. Design Patterns, Standard, Conventions and Best Practices](README-design-patterns-standard-conventions-and-best-practices.md)
 
-#### Diagrama de Sequencia - Synchronous Request / Response
-
-![SequenceDiagram-Context-SynchronousRequestResponse.png](./doc/SequenceDiagram-Context-SynchronousRequestResponse.png) 
-
-#### Diagrama de Sequencia - Synchronous Request / Acknowledge
-
-![SequenceDiagram-Context-SynchronousRequestAcknowledge.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledge.png) 
-
-#### Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
-
-![SequenceDiagram-Context-SynchronousRequestAcknowledgePoll.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgePoll.png)
-
-#### Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
-
-![SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgeCallback.png)
-
-#### Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Pool
-
-![SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayPool.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayPool.png)
-
-
-#### Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
-
-![SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayCallback.png](./doc/SequenceDiagram-Context-SynchronousRequestAcknowledgeRelayCallback.png)
+* Diagrama de Sequencia - Synchronous Request / Response
+* Diagrama de Sequencia - Synchronous Request / Acknowledge
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Pool
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
 
 
 ## I - Referências
