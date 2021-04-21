@@ -1,6 +1,6 @@
 ## README-design-patterns-standard-conventions-and-best-practices
 
-### [3. Projeto](./README.md#3-projeto)
+### [3. Projeto](./../README.md#3-projeto)
 
 ### 3.5. Design Patterns, Standard, Conventions and Best Practices
 
