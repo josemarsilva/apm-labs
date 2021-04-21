@@ -1,8 +1,8 @@
-## README-guia-exec-demo-teste-sanity-loadtest-stresstest-json-api-get-post.md
+### README-guia-exec-demo-teste-sanity-loadtest-stresstest-json-api-get-post.md
 
-[## 3. Projeto](./README.md#3-projeto)
+[## 3. Projeto](./../README.md#3-projeto)
 
-[### 3.4. Guia de Execução, Demonstração e Cenários de Teste](./README.md#34-guia-de-execução-demonstração-e-cenários-de-teste)
+[### 3.4. Guia de Execução, Demonstração e Cenários de Teste](./../README.md#34-guia-de-execução-demonstração-e-cenários-de-teste)
 
 #### 3.4.2. Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST
 
@@ -42,10 +42,10 @@
   * Infraestrutura:
     * Intel Core i5-8250U CPU @ 1.60 GHz 1.80 GHz - RAM 16 GB - Windows 10 Pro
   * Arquitetura:
-![DeployDiagram-SanityTest-LoadTest-StressTest-NodeJs-JsonAPI-GetPost.png](./doc/DeployDiagram-SanityTest-LoadTest-StressTest-NodeJs-JsonAPI-GetPost.png) 
+![DeployDiagram-SanityTest-LoadTest-StressTest-NodeJs-JsonAPI-GetPost.png](./uml-diagrams/DeployDiagram-SanityTest-LoadTest-StressTest-NodeJs-JsonAPI-GetPost.png) 
   * Sequência:
 
-![SequenceDiagram-Context-SynchronousRequestResponse.png](./doc/SequenceDiagram-Context-SynchronousRequestResponse.png) 
+![SequenceDiagram-Context-SynchronousRequestResponse.png](./uml-diagrams/SequenceDiagram-Context-SynchronousRequestResponse.png) 
 
 
 * **Monitoramento**: n/a
