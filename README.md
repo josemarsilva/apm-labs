@@ -72,15 +72,14 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 * **Teste de Volume _(Volume Test)_**: tem como objetivo avaliar capacidade da aplicação quando submetida a <ins>elevação da quantidade de dados</ins> que o sistema pode gerenciar
 
 
-### 2.7. [Design Patterns, Standard, Conventions and Best Practices](./doc/README-design-patterns-standard-conventions-and-best-practices.md)
+### 2.7. Design Patterns, Standard, Conventions and Best Practices
 
-* Diagrama de Sequencia - Synchronous Request / Response
-* Diagrama de Sequencia - Synchronous Request / Acknowledge
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Pool
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
-
+* [Diagrama de Sequencia - Synchronous Request / Response](./doc/README-design-patterns-standard-conventions-and-best-practices.md#271-diagrama-de-sequencia---synchronous-request--response)
+* [Diagrama de Sequencia - Synchronous Request / Acknowledge](./doc/README-design-patterns-standard-conventions-and-best-practices.md#272-diagrama-de-sequencia---synchronous-request--acknowledge)
+* [Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll](./doc/README-design-patterns-standard-conventions-and-best-practices.md#273-diagrama-de-sequencia---synchronous-request--acknowledge--poll)
+* [Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback](./doc/README-design-patterns-standard-conventions-and-best-practices.md#274-diagrama-de-sequencia---synchronous-request--acknowledge--callback)
+* [Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Pool](./doc/README-design-patterns-standard-conventions-and-best-practices.md#275-diagrama-de-sequencia---synchronous-request--acknowledge--relay--pool)
+* [Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback](./doc/README-design-patterns-standard-conventions-and-best-practices.md#276-diagrama-de-sequencia---synchronous-request--acknowledge--relay--callback)
 
 
 
