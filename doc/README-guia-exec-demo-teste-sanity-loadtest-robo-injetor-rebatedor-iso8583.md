@@ -1,8 +1,8 @@
-## README-guia-exec-demo-teste-sanity-loadtest-robo-injetor-rebatedor-iso8583.md
+### README-guia-exec-demo-teste-sanity-loadtest-robo-injetor-rebatedor-iso8583.md
 
-[## 3. Projeto](./README.md#3-projeto)
+[## 3. Projeto](./../README.md#3-projeto)
 
-[### 3.4. Guia de Execução, Demonstração e Cenários de Teste](./README.md#34-guia-de-execução-demonstração-e-cenários-de-teste)
+[### 3.4. Guia de Execução, Demonstração e Cenários de Teste](./../README.md#34-guia-de-execução-demonstração-e-cenários-de-teste)
 
 #### 3.4.3. Performance Test - Teste de Sanidade e Carga com robôs injetor e rebatedor ISO8583
 
@@ -42,10 +42,10 @@
   * Infraestrutura:
     * Intel Core i5-8250U CPU @ 1.60 GHz 1.80 GHz - RAM 16 GB - Windows 10 Pro
   * Arquitetura:
-![DeployDiagram-SanityTest-LoadTest-sanity-Robo-Injetor-Rebatedor-ISO8583.png](./doc/DeployDiagram-SanityTest-LoadTest-sanity-Robo-Injetor-Rebatedor-ISO8583.png) 
+![DeployDiagram-SanityTest-LoadTest-sanity-Robo-Injetor-Rebatedor-ISO8583.png](./uml-diagrams/DeployDiagram-SanityTest-LoadTest-sanity-Robo-Injetor-Rebatedor-ISO8583.png) 
   * Sequência:
 
-![SequenceDiagram-Context-SynchronousRequestResponse.png](./doc/SequenceDiagram-Context-SynchronousRequestResponse.png) 
+![SequenceDiagram-Context-SynchronousRequestResponse.png](./uml-diagrams/SequenceDiagram-Context-SynchronousRequestResponse.png) 
 
 
 * **Monitoramento**: n/a
