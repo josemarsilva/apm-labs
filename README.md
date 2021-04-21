@@ -35,22 +35,22 @@ O projeto **apm-labs** consiste em explorar cenários de testes **_Performance T
 
 ### 2.1. Diagrama de Caso de Uso (Use Case Diagram)
 
-![UseCaseDiagram-Context.png](./doc/UseCaseDiagram-Context.png) 
+![UseCaseDiagram-Context.png](./doc/uml-diagrams/UseCaseDiagram-Context.png) 
 
 
 ### 2.2. Diagrama de Implantação (Deploy Diagram)
 
-![DeployDiagram-Context.png](./doc/DeployDiagram-Context.png) 
+![DeployDiagram-Context.png](./doc/uml-diagrams/DeployDiagram-Context.png) 
 
 
 ### 2.3. Diagrama de BPMN (Business Process Modeling Notation)
 
-![BpmnDiagram-Context.png](./doc/BpmnDiagram-Context.png) 
+![BpmnDiagram-Context.png](./doc/bpmn-diagrams/BpmnDiagram-Context.png) 
 
 
 ### 2.4. Diagrama de Mapa Mental (Mind Map Diagram)
 
-![MindMapDiagram-Context.png](./doc/MindMapDiagram-Context.png) 
+![MindMapDiagram-Context.png](./doc/mind-maps/MindMapDiagram-Context.png) 
 
 
 ### 2.5. Estratégia de Branches (Branch Strategy Workflow)
