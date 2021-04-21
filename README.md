@@ -13,7 +13,14 @@ O projeto **apm-labs** consiste em explorar cenários de testes **_Performance T
     * [Diagrama de Mapa Mental (Mind Map Diagram)](#24-diagrama-de-mapa-mental-mind-map-diagram)
     * [Estratégia de Branches (Branch Strategy Workflow)](#25-estratégia-de-branches-branch-strategy-workflow)
     * [Glossário de Termos (Glossary)](#26-glossário-de-termos-glossary)
-    * [Considerações Gerais](#27-considerações-gerais)
+    * [Design Patterns, Standard, Conventions and Best Practices](#27-design-patterns-standard-conventions-and-best-practices)
+      * Diagrama de Sequencia - Synchronous Request / Response
+      * Diagrama de Sequencia - Synchronous Request / Acknowledge
+      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
+      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
+      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Pool
+      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
+    * [Considerações Gerais](#28-considerações-gerais)
   * Projeto
     * [Pré-Requisitos, Pré-Condições e Premissas](#31-pré-requisitos-pré-condições-e-premissas)
     * [Guia do Desenvolvedor e Administrador](#32-guia-do-desenvolvedor-e-administrador)
@@ -21,13 +28,6 @@ O projeto **apm-labs** consiste em explorar cenários de testes **_Performance T
     * [Guia de Execução, Demonstração e Cenários de Teste](#34-guia-de-execução-demonstração-e-cenários-de-teste)
       * [Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer) vs Ferramentas](#341-performance-test---injetar-browser-curl-postman-soapui-e-jmeter-vs-rebater-http-e-json-webserver-vs-ferramentas)
       * [Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST](#342-performance-test---teste-de-sanidade-carga-e-estresse-com-json-apis-get-e-post)
-    * [Design Patterns, Standard, Conventions and Best Practices](#35-design-patterns-standard-conventions-and-best-practices)
-      * Diagrama de Sequencia - Synchronous Request / Response
-      * Diagrama de Sequencia - Synchronous Request / Acknowledge
-      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
-      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
-      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Pool
-      * Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
   * [I - Referências](#i---referências)
 
 
@@ -72,7 +72,19 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 * **Teste de Volume _(Volume Test)_**: tem como objetivo avaliar capacidade da aplicação quando submetida a <ins>elevação da quantidade de dados</ins> que o sistema pode gerenciar
 
 
-### 2.7. Considerações Gerais
+### 2.7. [Design Patterns, Standard, Conventions and Best Practices](./doc/README-design-patterns-standard-conventions-and-best-practices.md)
+
+* Diagrama de Sequencia - Synchronous Request / Response
+* Diagrama de Sequencia - Synchronous Request / Acknowledge
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Pool
+* Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
+
+
+
+
+### 2.8. Considerações Gerais
 
 É importante lembrar que a quantificação, metrificação ou definição dos parâmetros de qualidade *não se dá em termos absolutos*, isto é cada negócio, cliente, sistema ou funcionalidade podem ter parâmetros de qualidade diferentes para: qualidade de desempenho, limite aceitáveis de ... (% CPU, tempo de resposta, etc) e definição de qual o melhor tipo de teste aplicar
 
@@ -154,16 +166,6 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 * **Objetivo**: O objetivo deste cenário de testes é avaliar se um <ins>robô rebatedor ISO8583</ins> construída em <ins>NodeJS</ins> consegue suportar uma carga de 10 a 100 usuários simultâneos realizando 10 mil requisições ISO8583 em menos de 1 minuto. 
 * **Cenários**:
   * 01 - Sanity Test / NodeJS ISO8583 Robots: Launcher vs Hitter / Injetor vs Rebatedor / 1 user, 100 requests - Synchronous Request / Response
-
-
-### [3.5. Design Patterns, Standard, Conventions and Best Practices](./doc/README-design-patterns-standard-conventions-and-best-practices.md)
-
-* Diagrama de Sequencia - Synchronous Request / Response
-* Diagrama de Sequencia - Synchronous Request / Acknowledge
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Poll
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Callback
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Pool
-* Diagrama de Sequencia - Synchronous Request / Acknowledge / Relay / Callback
 
 
 ## I - Referências
