@@ -1,8 +1,8 @@
-## README-guia-exec-demo-teste-injetar-rebater-web-json-server-tools-benchmark.md
+### README-guia-exec-demo-teste-injetar-rebater-web-json-server-tools-benchmark.md
 
-[## 3. Projeto](./README.md#3-projeto)
+[## 3. Projeto](./../README.md#3-projeto)
 
-[### 3.4. Guia de Execução, Demonstração e Cenários de Teste](./README.md#34-guia-de-execução-demonstração-e-cenários-de-teste)
+[### 3.4. Guia de Execução, Demonstração e Cenários de Teste](./../README.md#34-guia-de-execução-demonstração-e-cenários-de-teste)
 
 #### 3.4.1. Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer)
 
@@ -33,10 +33,10 @@
   * Infraestrutura:
     * Intel Core i5-8250U CPU @ 1.60 GHz 1.80 GHz - RAM 16 GB - Windows 10 Pro
   * Arquitetura:
-![DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png](./doc/DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png) 
+![DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png](./uml-diagrams/DeployDiagram-Browser-Curl-Postman-SoapUI-JMeter-vs-NodeJsWebserver.png) 
   * Sequência:
 
-![SequenceDiagram-Context-SynchronousRequestResponse.png](./doc/SequenceDiagram-Context-SynchronousRequestResponse.png) 
+![SequenceDiagram-Context-SynchronousRequestResponse.png](./uml-diagrams/SequenceDiagram-Context-SynchronousRequestResponse.png) 
 
 
 * **Monitoramento**: n/a
