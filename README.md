@@ -106,7 +106,7 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 * Leia as documentações disponíves em "2. Documentação"  and "3.x. Design Patterns, Standard, Conventions and Best Practices"
 
 
-### 3.3. [Guia de Implantação, Configuração e Instalação](README-guia-implantacao-configuracao-instalacao.md)
+### 3.3. [Guia de Implantação, Configuração e Instalação](./doc/README-guia-implantacao-configuracao-instalacao.md)
 
 * Instalando/Clonando este repositório no ambiente
 * Instalando NodeJS (em Linux Ubuntu)
@@ -116,7 +116,7 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
 
 ### 3.4. Guia de Execução, Demonstração e Cenários de Teste
 
-#### [3.4.1. Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer) vs ferramentas](README-guia-exec-demo-teste-injetar-rebater-web-json-server-tools-benchmark.md)
+#### [3.4.1. Performance Test - injetar (Browser, Curl, Postman, SoapUI e JMeter) vs rebater (HTTP e JSON WebServer) vs ferramentas](./doc/README-guia-exec-demo-teste-injetar-rebater-web-json-server-tools-benchmark.md)
 
 * **Objetivo**: O objetivo deste cenário de testes é avaliar as ferramentas na atividade de *Teste de Carga*
 * **Cenários**:
@@ -134,7 +134,7 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * 05.d - Load Test / JMeter / JSON REST
 
 
-#### [3.4.2. Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST](README-guia-exec-demo-teste-sanity-loadtest-stresstest-json-api-get-post.md)
+#### [3.4.2. Performance Test - Teste de Sanidade, Carga e Estresse com Json API's GET e POST](./doc/README-guia-exec-demo-teste-sanity-loadtest-stresstest-json-api-get-post.md)
 
 * **Objetivo**: O objetivo deste cenário de testes é avaliar se uma <ins>API</ins> construída em <ins>NodeJS</ins> com um cadastro simples consegue suportar uma carga de 10 a 100 usuários simultâneos fazendo requisições de GET e POST. Para completar, desejamos estressar aplicação até saber qual o limite de usuários simultâneos.
 * **Cenários**:
@@ -149,14 +149,14 @@ De uma forma geral, vamos tentar <ins>definir</ins> e <ins>caracterizar</ins> al
   * 03.e - Load Test / JMeter / REST API GET/POST / 100 user, 100 requests - Synchronous Request / Response
   * 03.f - Load Test / JMeter / REST API GET/POST / 100 user, 1000 requests - Synchronous Request / Response
 
-#### [3.4.3. Performance Test - Teste de Sanidade e Carga com robôs injetor e rebatedor ISO8583](README-guia-exec-demo-teste-sanity-loadtest-robo-injetor-rebatedor-iso8583.md)
+#### [3.4.3. Performance Test - Teste de Sanidade e Carga com robôs injetor e rebatedor ISO8583](./doc/README-guia-exec-demo-teste-sanity-loadtest-robo-injetor-rebatedor-iso8583.md)
 
 * **Objetivo**: O objetivo deste cenário de testes é avaliar se um <ins>robô rebatedor ISO8583</ins> construída em <ins>NodeJS</ins> consegue suportar uma carga de 10 a 100 usuários simultâneos realizando 10 mil requisições ISO8583 em menos de 1 minuto. 
 * **Cenários**:
   * 01 - Sanity Test / NodeJS ISO8583 Robots: Launcher vs Hitter / Injetor vs Rebatedor / 1 user, 100 requests - Synchronous Request / Response
 
 
-### [3.5. Design Patterns, Standard, Conventions and Best Practices](README-design-patterns-standard-conventions-and-best-practices.md)
+### [3.5. Design Patterns, Standard, Conventions and Best Practices](./doc/README-design-patterns-standard-conventions-and-best-practices.md)
 
 * Diagrama de Sequencia - Synchronous Request / Response
 * Diagrama de Sequencia - Synchronous Request / Acknowledge
